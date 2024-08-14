@@ -62,3 +62,12 @@ body { margin: 0px;}
     font-weight: 600;
     line-height: 20px;    
 }
+
+.dormir {
+    text-align: center;
+    color: #cdcdf8;
+    background-color: #8a8aef;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
