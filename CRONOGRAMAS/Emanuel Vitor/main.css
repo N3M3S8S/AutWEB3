@@ -71,3 +71,39 @@ body { margin: 0px;}
     font-weight: 600;
     line-height: 20px;    
 }
+
+.quimica {
+    text-align: center;
+    color: #000000;
+    background-color: #01721d;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.manutencao {
+    text-align: center;
+    color: #ffffff;
+    background-color: #404441;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.quimica {
+    text-align: center;
+    color: #000000;
+    background-color: #03d637;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.viagem {
+    text-align: center;
+    color: #000000;
+    background-color: #1678c9;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
