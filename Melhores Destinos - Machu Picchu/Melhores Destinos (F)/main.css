@@ -1,0 +1,377 @@
+html, body {height: 100%; margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.centralizar1 {
+    justify-content: center;
+    display: flex;
+}
+
+.centralizar2 {
+    width: 1196px;
+}
+
+.top-bar {
+    background-color: #184494;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+
+    img {
+        height: 32.5px;
+        width: auto;
+        margin-top: 7px;
+    }
+}
+
+.background {
+    background-image: url(https://imgmd.net/images/c_limit%2Cw_1200/v1/guia/1684143/machu-picchu-61-c.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(0.371 * 100vw);
+}
+
+.sombra {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.guia-superior {
+    display: flex;
+    img {
+        margin-top: 12px;
+        height: 30px;
+    }
+    justify-content: center;
+
+    h3 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    
+}
+
+.guia-texto {
+    text-transform: uppercase;
+    margin-top: 7px;
+    line-height: 40px;
+    margin-left: 2.80%;
+    color: white;
+    font-weight: 640;
+    font-size: 13.2px;
+    letter-spacing: 0.4;
+
+    a {
+        text-decoration: none;
+        font-weight: 640;
+        color: white;
+    }
+}
+
+.titulos {
+    color: white;
+    text-align: center;
+    text-shadow: 0.5px 0.5px black;
+
+    h3 {
+        margin-top: 48px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    h1 {
+        margin-top: -13px;
+        font-size: 64px;
+        font-weight: 800;      
+    }
+}
+
+.botoes {
+    display: flex;
+    padding-top: 13.5px;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover div {
+        box-shadow: 3px 3px 5px black;
+        border: solid blue 1px;
+    }
+}
+
+.botao {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    border: solid rgb(170, 170, 170) 0.1px;
+    border-radius: 6px;
+    width: 137.5px;
+    height: 59px;
+    margin-right: 10px;
+
+    i {
+        font-size: 20px;
+        margin-top: 6px;
+    }
+}
+
+.texto-cinza{
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(161, 159, 159);
+
+    a {
+        text-decoration: none;
+        color: rgb(161, 159, 159);
+        margin-right: 4px;
+    }
+
+    p {
+        margin: 0 6px 0 4px;
+    }
+}
+
+.corpo {
+    display: flex;
+    margin-top: 55px;
+    height: 5971.48px;
+}
+
+.autor {
+    width: 160px;
+    height: 160px;
+    border: solid gray 0.1px;
+    border-radius: 18px;
+
+    p {
+        color: gray;
+        line-height: 9px;
+        font-size: 14.2px;
+        font-weight: 500;
+    }
+    
+    p1 {
+        color: gray;
+        line-height: 9px;
+        font-size: 14.2px;
+    }
+
+    img {
+        width: 160px;
+        border-radius: 18px;
+    }
+}
+
+.botoesF {
+    display: flex;
+    padding-top: 13.5px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .botao {
+        padding-top: 7px;
+    }
+
+    a:hover div {
+        box-shadow: 3px 3px 5px black;
+        border: solid blue 1px;
+    }
+}
+
+.finalizacao {
+    display: block;
+    padding-top: 210px;
+
+    h2 {
+        font-size: 18.8px;
+    }
+}
+
+.creditos {
+    margin-top: 35px;
+    background-color: #184494;
+    width: 100%;
+    height: 416px;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        margin-top: 26.5px;
+    }
+}
+
+.esquerda {
+    width: 100%;
+    text-align: center;
+
+    p {
+        text-align: left;
+        color: white;
+        font-size: 13px;
+        margin-top: 22.5px;
+        margin-left: 34%;
+        line-height: 23px;
+    }
+
+    img {
+        height: 31.8px;
+        margin-left: 100.5px;
+    }
+}
+
+.direita {
+    width: 100%;
+    text-align: center;
+
+    p {
+        text-align: left;
+        color: white;
+        font-size: 13px;
+        margin-top: 19px;
+        margin-left: 3%;
+        line-height: 23px;
+    }
+
+    img {
+        height: 42px;
+        margin-left: -200px;
+        margin-top: 20px;
+    }
+}
+
+.links-finais-div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.links-finais {
+    color: white;
+    margin-right: 12px;
+    font-size: 12.5px;
+    text-transform: uppercase;
+
+    a {
+        justify-content: center;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        letter-spacing: 0.05px;
+    }
+}
+
+.icones {
+    background-color: #133960;
+    border-radius: 21px;
+    margin-top: 35px;
+    margin-right: 12px;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 35px;
+
+    i {
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.copyright {
+    margin-top: 16px;
+    border-top: solid rgb(4, 91, 141) 1px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    line-height: 48px;
+
+    a {
+        color: #0b7bd6;
+    }
+}
+
+.texto-corpo {
+    margin-top: -30px;
+    font-size: 18px;
+    line-height: 30.6px;
+    margin-left: 40px;
+
+    p {
+        color: #333;
+    }
+
+    h2 {
+        font-size: 26px;
+        font-weight: 650;
+        margin-top: 42px;
+    }
+
+    img {
+        width: 800px;
+        border-radius: 6px;
+    }
+
+    li {
+        line-height: 55px;
+    }
+
+    li::marker {
+        color: #0b7bd6;
+    }
+
+    a { 
+        color: #0b7bd6;
+    }
+
+    .tabela {
+        border-collapse: collapse;
+        width: 100%;
+
+        th {
+            background-color: #133960;
+            border: solid #133960 1px;
+            color: white;
+            font-size: 13px;
+        }
+
+        td {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 35.5px;
+            border: solid rgb(182, 182, 182) 0.01px;
+            padding-left: 10px;
+        }
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ececec;
+    }
+
+    .caixa-final {
+        border: dashed rgb(166, 248, 166) 1px;
+        border-radius: 6px;
+        background-color: rgb(237, 255, 237);
+
+        h2 {
+            margin: 70px 0 0 25px;
+        }
+
+        ul {
+            margin-left: 30px;
+        }
+    }
+}
