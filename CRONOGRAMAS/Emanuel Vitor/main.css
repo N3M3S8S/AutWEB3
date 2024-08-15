@@ -72,10 +72,28 @@ body { margin: 0px;}
     line-height: 20px;    
 }
 
+.intervalo {
+    text-align: center;
+    color: #000000;
+    background-color: #bfd5f0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
 .quimica {
     text-align: center;
     color: #000000;
     background-color: #01721d;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.matematica {
+    text-align: center;
+    color: #000000;
+    background-color: #ffee00;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -90,6 +108,15 @@ body { margin: 0px;}
     line-height: 20px;    
 }
 
+.poo {
+    text-align: center;
+    color: #000000;
+    background-color: #ff0040;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
 .quimica {
     text-align: center;
     color: #000000;
@@ -99,10 +126,91 @@ body { margin: 0px;}
     line-height: 20px;    
 }
 
+.biologia {
+    text-align: center;
+    color: #000000;
+    background-color: #2bff00;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.portugues {
+    text-align: center;
+    color: #000000;
+    background-color: #8cf504;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.historia {
+    text-align: center;
+    color: #000000;
+    background-color: #9c7800;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.redes {
+    text-align: center;
+    color: #000000;
+    background-color: #9900ff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.filosofia {
+    text-align: center;
+    color: #000000;
+    background-color: #ff1e00;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.autweb {
+    text-align: center;
+    color: #000000;
+    background-color: #00d9ff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
 .viagem {
     text-align: center;
     color: #000000;
     background-color: #1678c9;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.igreja {
+    text-align: center;
+    color: #000000;
+    background-color: #a5005b;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;     
+}
+
+.afazeres {
+    text-align: center;
+    color: #ffffff;
+    background-color: #3b8060;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;    
+}
+
+.lazer {
+    text-align: center;
+    color: #000000;
+    background-color: #00ff95;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
