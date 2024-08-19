@@ -1,7 +1,7 @@
 body { margin: 0px;}
 
 .CRONOGRAMA {
-    background-color: rgb(135, 72, 252);
+    background-color: rgb(23, 125, 143);
     border: solid black 1px;
     border-radius: 6px;
     width: 100%;
@@ -44,12 +44,12 @@ body { margin: 0px;}
     font-size: 20px;
     font-weight: 600;
     color: #d5d5f6;
-    background-color: #151599;
+    background-color: #085375;
 }
 
 .rotina {
     color: #d5d5f6;
-    background-color: #2E2FE3;
+    background-color: #103850;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -67,7 +67,7 @@ body { margin: 0px;}
 .dormir {
     text-align: center;
     color: #cdcdf8;
-    background-color: #8a8aef;
+    background-color: #30abca;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -85,7 +85,7 @@ body { margin: 0px;}
 .quimica {
     text-align: center;
     color: #000000;
-    background-color: #01721d;
+    background-color: #2a6964;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -94,7 +94,7 @@ body { margin: 0px;}
 .matematica {
     text-align: center;
     color: #000000;
-    background-color: #ffee00;
+    background-color: #2a6964;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -102,8 +102,8 @@ body { margin: 0px;}
 
 .manutencao {
     text-align: center;
-    color: #ffffff;
-    background-color: #404441;
+    color: #000000;
+    background-color: #2a6964;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -112,16 +112,7 @@ body { margin: 0px;}
 .poo {
     text-align: center;
     color: #000000;
-    background-color: #ff0040;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 20px;    
-}
-
-.quimica {
-    text-align: center;
-    color: #000000;
-    background-color: #03d637;
+    background-color: #2a6964;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -130,7 +121,7 @@ body { margin: 0px;}
 .biologia {
     text-align: center;
     color: #000000;
-    background-color: #2bff00;
+    background-color: #2a6964;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -139,7 +130,7 @@ body { margin: 0px;}
 .portugues {
     text-align: center;
     color: #000000;
-    background-color: #8cf504;
+    background-color: #2a6964;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -148,7 +139,7 @@ body { margin: 0px;}
 .historia {
     text-align: center;
     color: #000000;
-    background-color: #9c7800;
+    background-color: #2a6964;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -157,7 +148,7 @@ body { margin: 0px;}
 .redes {
     text-align: center;
     color: #000000;
-    background-color: #9900ff;
+    background-color: #2a6964;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -166,7 +157,7 @@ body { margin: 0px;}
 .filosofia {
     text-align: center;
     color: #000000;
-    background-color: #ff1e00;
+    background-color: #2a6964;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -175,7 +166,7 @@ body { margin: 0px;}
 .autweb {
     text-align: center;
     color: #000000;
-    background-color: #00d9ff;
+    background-color: #2a6964;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
@@ -193,7 +184,7 @@ body { margin: 0px;}
 .igreja {
     text-align: center;
     color: #000000;
-    background-color: #a5005b;
+    background-color: #0a8d71;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;     
@@ -211,7 +202,7 @@ body { margin: 0px;}
 .lazer {
     text-align: center;
     color: #000000;
-    background-color: #00ff95;
+    background-color: #167a51;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;    
