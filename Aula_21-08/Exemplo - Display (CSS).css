@@ -8,14 +8,50 @@ body {
 
 div {
     border: solid black 1px;
-    padding: 5px;
 }
 
-.fundo {
+.tudo {
+    width: 100%;
+}
+
+.top-bar {
+    background-color: #154194;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.secao1 {
+    width: 100%;
     background-color: #103476;
+    padding: 20px;
+}
+
+
+
+.seq-quadros {
+    justify-content: center;
+    display: flex;
+    
+    > div {
+        border-radius: 10px;
+        box-shadow: 2px 2px black;
+    }
+}
+
+.quadro-maior {
+    width: 600px;
+    height: 450px;
+    margin: 20px;
+}
+
+.quadro-menor {
+    width: 385px;
+    height: 300px;
+    margin: 20px;
 }
 
 .barra-topo {
-    height: 50px;
     width: 100%;
 }
