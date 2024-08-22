@@ -1,13 +1,9 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 body {
     margin: 0;
-}
-
-div {
-    border: solid black 1px;
 }
 
 .tudo {
@@ -16,16 +12,30 @@ div {
 
 .top-bar {
     background-color: #154194;
-    height: 50px;
+    height: 55px;
+    display: flex;
     justify-content: center;
     text-align: center;
     color: white;
+    font-size: 12px;
+    font-weight: 600;
+    align-items: center;
+
+    > div {
+        margin-left: 20px;
+        padding: 14px 7px 14px 7px;
+    }
+
+    > div:hover {
+        background-color: #103476;
+        border-radius: 6px;
+    }
 }
 
 .secao1 {
+    padding-top: 12px;
     width: 100%;
     background-color: #103476;
-    padding: 20px;
 }
 
 
@@ -33,23 +43,59 @@ div {
 .seq-quadros {
     justify-content: center;
     display: flex;
-    
+    padding-top: 5px;
+
+    > div:hover {
+        box-shadow: 1px 1px 5px rgb(255, 255, 255);
+    }
+
     > div {
-        border-radius: 10px;
-        box-shadow: 2px 2px black;
+        border-radius: 6px;
+        box-shadow: 1px 1px 5px black;
+        background-color: white;
     }
 }
 
 .quadro-maior {
-    width: 600px;
-    height: 450px;
-    margin: 20px;
+    width: 587.5px;
+    height: 460px;
+    margin: 19px;
+
+
+    img {
+        width: 587.5px;
+        height: 308px;
+        border-radius: 6px 6px 0 0;
+    }
+
+    h2 {
+        margin-left: 21px;
+        letter-spacing: 0.005px;
+        font-size: 22px;
+        color: rgb(49, 49, 49);
+        font-weight: 800;
+        line-height: 26px;
+    }
 }
 
 .quadro-menor {
-    width: 385px;
+    width: 379px;
     height: 300px;
-    margin: 20px;
+    margin: 19px;
+
+    img {
+        width: 379px;
+        height: 199px;
+        border-radius: 6px 6px 0 0;
+    }
+}
+
+.titulo {
+    background-color: white;
+}
+
+.autor {
+    background-color: white;
 }
 
 .barra-topo {
