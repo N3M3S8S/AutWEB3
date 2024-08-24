@@ -20,6 +20,7 @@ body {
     font-size: 12px;
     font-weight: 625;
     align-items: center;
+    margin: 0px;
 
     a {
         text-decoration: none;
@@ -30,22 +31,25 @@ body {
         background-color: #103476;
         border-radius: 6px;
     }
-
+    
     img {
-        margin-right: 20px;
+        padding-right: 100px;
     }
 }
 
 .botoes-guia {
     padding: 14px 7px 14px 7px;
-    margin-left: 20px;
+}
+
+.seq-botoes-guia {
+    display: flex;
+    column-gap: 20px;
 }
 
 .botao-baixar {
     background-color: #006dff;
     border-radius: 6px;
     padding: 9px 7px 9px 7px;
-    margin-left: 20px;
 }
 
 .pesquisa {
@@ -53,7 +57,6 @@ body {
     border-radius: 50%;
     height: 37.5px;
     width: 37.5px;
-    margin-left: 155px;
     line-height: 35px;
     font-size: 20px;
 }
