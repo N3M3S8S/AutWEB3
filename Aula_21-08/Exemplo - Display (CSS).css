@@ -72,6 +72,7 @@ body {
 }
 
 .secao1 {
+    height: 925px;
     width: 100%;
     background-color: #103476;
 }
@@ -80,24 +81,28 @@ body {
     justify-content: center;
     display: flex;
     padding-top: 17px;
+    gap: 40px;
+    padding-bottom: 20px;
 
-    > div:hover {
-        box-shadow: 1px 1px 5px rgb(255, 255, 255);
-    }
+    a {
+        text-decoration: none;
+        
+        > div {
+            border-radius: 6px;
+            box-shadow: 1px 1px 5px black;
+            background-color: white;    
+        }
 
-    > div {
-        border-radius: 6px;
-        box-shadow: 1px 1px 5px black;
-        background-color: white;
+        > div:hover {
+            box-shadow: 1px 1px 5px rgb(255, 255, 255);
+        }
     }
 }
 
 .quadro-maior {
     width: 587.5px;
     height: 460px;
-    margin: 19px;
-
-
+    
     img {
         width: 587.5px;
         height: 308px;
@@ -125,7 +130,6 @@ body {
 .quadro-menor {
     width: 379px;
     height: 300px;
-    margin: 19px;
 
     img {
         width: 379px;
