@@ -1,0 +1,23 @@
+
+div {
+    border: solid black 1px;
+}
+
+.area {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    position: relative;
+}
+
+.quadro1 {
+    position: absolute;
+    background-color: lightcoral;
+    left: 100px;
+    top: 600px;
+}
+
+.quadro1, .quadro2 {
+    width: 200px;
+    height: 200px;
+}
