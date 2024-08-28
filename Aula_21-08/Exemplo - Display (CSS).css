@@ -24,6 +24,7 @@ body {
     a {
         text-decoration: none;
         color: white;
+        text-align: center;
     }
 
     a:hover div{
@@ -72,9 +73,13 @@ body {
 }
 
 .secao1 {
-    height: 925px;
+    padding-bottom: 30px;
     width: 100%;
     background-color: #103476;
+}
+
+.secao2 {
+    width: 100%;    
 }
 
 .seq-quadros {
@@ -94,7 +99,7 @@ body {
         }
 
         > div:hover {
-            box-shadow: 1px 1px 5px rgb(255, 255, 255);
+            box-shadow: 1px 1px 10px rgb(255, 255, 255);
         }
     }
 }
@@ -102,7 +107,7 @@ body {
 .quadro-maior {
     width: 587.5px;
     height: 460px;
-    
+
     img {
         width: 587.5px;
         height: 308px;
@@ -123,17 +128,70 @@ body {
         letter-spacing: 0.005px;
         font-size: 12px;
         color: gray;
+        font-weight: 500;
         line-height: 12px;
     }
 }
 
 .quadro-menor {
     width: 379px;
-    height: 300px;
+    height: 330px;
 
     img {
         width: 379px;
         height: 199px;
         border-radius: 6px 6px 0 0;
     }
+}
+
+.titulo {
+    height: 75px;
+}
+
+.autor {
+    display: flex;
+}
+
+.selecionador {
+    padding-top: 40px;
+    display: grid;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.selecionador-top {
+    justify-content: left;
+    display: flex;
+    gap: 5px;
+    padding-left: 15px;
+
+    div {
+        height: 37px;
+        padding: 0 20px 0 20px;
+        border-radius: 5px 5px 0px 0;
+        text-align: center;
+        line-height: 37px;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+.selecionadores-top-selecionado {
+    background-color: #103476;
+    position: relative;
+}
+
+.selecionadores-top {
+    background-color: #086cfc;
+}
+
+.selecionador-detalhes {
+    width: 1100px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: #103476;
+    box-shadow: 1px 1px 5px black;
 }
