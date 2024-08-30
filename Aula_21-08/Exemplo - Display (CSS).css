@@ -79,13 +79,23 @@ body {
 }
 
 .secao1 {
+    padding-top: 75px;
     padding-bottom: 30px;
     width: 100%;
     background-color: #103476;
 }
 
 .secao2 {
-    width: 100%;    
+    display: grid;
+    width: 100%;  
+    justify-content: center;
+    grid-template-columns: 267px;
+    
+    > a {
+        text-decoration: none;
+        display: grid;
+        justify-content: center;
+    }
 }
 
 .seq-quadros {
@@ -187,7 +197,6 @@ body {
 
 .selecionadores-top-selecionado {
     background-color: #103476;
-    position: relative;
 }
 
 .selecionadores-top {
@@ -229,4 +238,54 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
+}
+
+
+.anuncio {
+    display: grid;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.anuncio-corpo {
+    display: flex;
+    background-color: black;
+    height: 250px;
+    width: 1170px;
+    align-items: center;
+    justify-content: center;
+}
+
+.seq-quadros-menor {
+    padding: 50px 0 50px 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 30px 36px;
+
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+
+        > div {
+            border-radius: 6px;
+            box-shadow: 1px 1px 5px black;
+            background-color: white;    
+        }
+    }
+}
+
+.botao-carregar {
+    display: flex;
+    background-color: #2596be;
+    border-radius: 6px;
+    height: 40px;
+    padding: 0 30px 0 30px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 625;
+    letter-spacing: 1px;
 }
