@@ -21,13 +21,22 @@ body {
     background-color: black;
 }
 
+.up-buttom {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border: solid white 5px;
+    left: 96%;
+    top: 90%;
+}
+
 .top-bar {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
     border: solid white 5px;
-    outline-offset: 10px;
     margin: 10px;
     background-color: black;
     width: 98%;
@@ -91,6 +100,7 @@ body {
     justify-content: space-evenly;
     width: 100%;
     height: auto;
+    padding-top: 4.5px;
 
     img {
         height: 350px;
