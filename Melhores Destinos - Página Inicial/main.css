@@ -226,6 +226,10 @@ body {
     justify-content: center;
     column-gap: 30px;
 
+    a:hover div {
+        box-shadow: 1px 1px 5px black;    
+    }
+
     a {
         color: black;
         display: grid;

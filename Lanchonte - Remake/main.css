@@ -1,0 +1,179 @@
+@font-face { font-family: 'Undertale';
+src: url('DeterminationMonoWebRegular-Z5oq.ttf'); }
+
+* {
+    font-family: Undertale;
+    color: white;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.top-bar-background {
+    width: 100%;
+    background-color: black;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    border: solid white 5px;
+    outline-offset: 10px;
+    margin: 10px;
+    background-color: black;
+    width: 98%;
+    height: 50px;
+
+    > a, .seq-botoes {
+        margin: 0 20px 0 20px;
+    }
+
+    a:hover span {
+        color: yellow;
+    }
+
+    .sobre-nos {
+        display: flex;
+        align-items: center;
+        
+        img {
+            height: 40px;
+            width: auto;
+            animation-play-state: paused;
+        }
+
+        span {
+            font-size: 25px;
+            padding-left: 6px;
+        }
+    }
+}
+
+.seq-botoes {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 100%;
+
+    a:hover img {
+        visibility: visible;
+    }
+}
+
+.botao {
+    font-size: 25px;
+    text-align: end;
+
+    img {
+        height: 16px;
+        width: auto;
+        visibility: hidden;
+    }
+}
+
+.shop-background {
+    display: flex;
+    align-items: center;
+    background-image: url(https://art.pixilart.com/26e841c819.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+
+    img {
+        height: 350px;
+        width: auto;
+    }
+}
+
+.descr  {
+    background-color: black;
+    border: solid white 5px;
+    width: 300px;
+    height: 300px;
+
+    p {
+        font-size: 24px;
+        margin: 20px;
+        word-wrap: break-word;
+    }
+}
+
+.secao1 {
+    display: flex;
+    flex-direction: column;
+    border: solid white 5px;  
+}
+
+.secao2 {
+    display: flex;
+    flex-direction: column;
+    border: solid white 5px; 
+    
+    .titulo {
+        font-size: 75px;
+    }
+}
+
+.titulo {
+    font-size: 100px;
+    text-align: center;
+    border-bottom: solid white 5px;
+}
+
+.bloco-alimentos {
+    margin: 10px auto 10px;
+    width: 1200px;
+    border: solid white 5px;
+    text-align: center;
+
+    > span {
+        font-size: 50px;
+        border-bottom: solid white 5px;    
+    }
+}
+
+.quadro-alimentos {
+    margin: 20px 0 20px 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 17.5% 17.5% 17.5% 17.5% 17.5%;
+    justify-content: center;
+
+    a:hover div {
+        border-color: yellow;
+    }
+}
+
+.alimento {
+    height: 200px;
+    width: 200px;
+    border-left: solid white 5px;
+    border-right: solid white 5px;
+
+    img {
+        height: 127px;
+        width: 127px;
+    }
+
+    .titulo-preco {
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 25px;
+        border-top: solid white 5px;
+        border-bottom: solid white 5px;    
+    }
+}
