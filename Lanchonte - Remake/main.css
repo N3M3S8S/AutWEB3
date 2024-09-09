@@ -132,7 +132,7 @@ body {
     border: solid white 5px;  
 }
 
-.secao2e3 {
+.secaaux {
     display: flex;
     flex-direction: column;
     border: solid white 5px; 
@@ -239,4 +239,8 @@ body {
         margin: 20px;
         word-wrap: break-word;    
     }
+}
+
+.creditos {
+    display: flex;
 }
