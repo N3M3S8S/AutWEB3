@@ -29,6 +29,11 @@ body {
     border: solid white 5px;
     left: 96%;
     top: 90%;
+
+    img  {
+        height: 25px;
+        width: 100%;
+    }
 }
 
 .top-bar {
@@ -127,13 +132,15 @@ body {
     border: solid white 5px;  
 }
 
-.secao2 {
+.secao2e3 {
     display: flex;
     flex-direction: column;
     border: solid white 5px; 
+    border-top: 0px;
     
     .titulo {
         font-size: 75px;
+        border: 0px;
     }
 }
 
@@ -141,6 +148,11 @@ body {
     font-size: 100px;
     text-align: center;
     border-bottom: solid white 5px;
+}
+
+.subtitulo {
+    font-size: 50px;
+    text-align: center;
 }
 
 .bloco-alimentos {
@@ -185,5 +197,46 @@ body {
         font-size: 25px;
         border-top: solid white 5px;
         border-bottom: solid white 5px;    
+    }
+}
+
+.detalhes {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    margin: 15px 0 20px 0;
+
+    img {
+        height: 300px;
+        width: auto;
+    }
+}
+
+.seq-coment {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 30.7% 30.7% 30.7%;
+    justify-content: space-evenly;
+    padding: 15px 0 15px 0;
+}
+
+.comentario {
+    display: flex;
+    border: solid white 5px;
+    height: 100px;
+    width: 400px;
+    align-items: center;
+
+    img {
+        height: 90px;
+        width: 90px;
+        margin-left: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 20px;
+        word-wrap: break-word;    
     }
 }
