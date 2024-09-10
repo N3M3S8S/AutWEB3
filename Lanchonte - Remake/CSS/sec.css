@@ -16,6 +16,91 @@ body {
     background-color: black;
 }
 
+.top-bar-background {
+    width: 100%;
+    background-color: black;
+}
+
+.yellowbutton {
+    div:hover {
+        border-color: yellow;
+    }
+}
+
+.up-buttom {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border: solid white 5px;
+    left: 96%;
+    top: 90%;
+
+    img  {
+        height: 25px;
+        width: 100%;
+    }
+}
+
+.top-bar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: solid white 5px;
+    margin: 10px;
+    background-color: black;
+    width: 98%;
+    height: 50px;
+
+    > a, .seq-botoes {
+        margin: 0 20px 0 20px;
+    }
+
+    a:hover span {
+        color: yellow;
+    }
+
+    .sobre-nos {
+        display: flex;
+        align-items: center;
+        
+        img {
+            height: 40px;
+            width: auto;
+            animation-play-state: paused;
+        }
+
+        span {
+            font-size: 25px;
+            padding-left: 6px;
+        }
+    }
+}
+
+.seq-botoes {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 100%;
+
+    a:hover img {
+        visibility: visible;
+    }
+}
+
+.botao {
+    font-size: 25px;
+    text-align: end;
+
+    img {
+        height: 16px;
+        width: auto;
+        visibility: hidden;
+    }
+}
+
 .titulo {
     font-size: 100px;
     text-align: center;
@@ -24,7 +109,7 @@ body {
 
 .subtitulo {
     padding-top: 15px;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
 }
 
@@ -56,6 +141,12 @@ body {
     border: solid white 5px;
     width: 900px;
     margin: 15px 0 15px 0;
+
+    a:hover img {
+        border-color: yellow;
+        height: 60px;
+        width: 60px;
+    }
 
     span {
         grid-column: span 3;
@@ -89,6 +180,15 @@ body {
         font-size: 26px;
         border: solid white 5px;
         padding: 0px 10px 0 10px;    
+    }
+
+    .compras {
+
+        img {
+            height: 50px;
+            width: 50px;
+            padding: 0 20px 0 20px;
+        }
     }
 
     .preco {
