@@ -220,6 +220,7 @@ body {
     grid-template-columns: 30.7% 30.7% 30.7%;
     justify-content: space-evenly;
     padding: 15px 0 15px 0;
+    justify-items: center;
 }
 
 .comentario {
