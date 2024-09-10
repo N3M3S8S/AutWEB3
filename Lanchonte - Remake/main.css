@@ -21,6 +21,12 @@ body {
     background-color: black;
 }
 
+.yellowbutton {
+    div:hover {
+        border-color: yellow;
+    }
+}
+
 .up-buttom {
     position: fixed;
     width: 25px;
