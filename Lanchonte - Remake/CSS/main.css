@@ -20,7 +20,7 @@ body {
 
 .yellowbutton {
     div:hover {
-        border-color: yellow;
+        border-color: red;
     }
 }
 
@@ -168,6 +168,7 @@ body {
     margin: 10px auto 10px;
     width: 1200px;
     border: solid #c79e56 5px;
+    border-radius: 60px;
     background-color: #ffdea6;
     text-align: center;
 
@@ -190,10 +191,13 @@ body {
 }
 
 .alimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 200px;
     width: 200px;
-    border-left: solid white 5px;
-    border-right: solid white 5px;
+    border: solid white 5px;
+    border-radius: 10px;
     background-color: #c79e56;
 
     img {
@@ -206,8 +210,12 @@ body {
         text-align: center;
         line-height: 25px;
         font-size: 25px;
-        border-top: solid white 5px;
-        border-bottom: solid white 5px;    
+
+        span {
+            background-color: #e69603;
+            padding: 2px;
+            border-radius: 5px;  
+        }
     }
 
     span {
