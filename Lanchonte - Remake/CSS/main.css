@@ -63,12 +63,6 @@ body {
     .sobre-nos {
         display: flex;
         align-items: center;
-        
-        img {
-            height: 40px;
-            width: auto;
-            animation-play-state: paused;
-        }
 
         span {
             font-size: 25px;
@@ -139,7 +133,8 @@ body {
 }
 
 .titulo {
-    font-size: 100px;
+    padding: 30px 0 30px 0;
+    font-size: 150px;
     text-align: center;
     border-bottom: solid #c79e56 5px;
     color: white;
