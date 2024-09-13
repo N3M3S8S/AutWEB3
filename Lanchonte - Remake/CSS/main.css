@@ -145,19 +145,6 @@ body {
     color: white;
 }
 
-.secaoaux {
-    display: flex;
-    flex-direction: column;
-    border: solid rgb(255, 255, 255) 5px; 
-    border-top: 0px;
-
-    .titulo {
-        font-size: 75px;
-        border: 0px;
-        color: white;
-    }
-}
-
 .subtitulo {
     font-size: 50px;
     text-align: center;
@@ -193,7 +180,6 @@ body {
 .alimento {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 200px;
     width: 200px;
     border: solid white 5px;
@@ -206,16 +192,12 @@ body {
     }
 
     .titulo-preco {
-        height: 25px;
+        height: 35px;
         text-align: center;
-        line-height: 25px;
+        line-height: 35px;
         font-size: 25px;
-
-        span {
-            background-color: #e69603;
-            padding: 2px;
-            border-radius: 5px;  
-        }
+        background-color: #e69603;
+        border-radius: 5px;
     }
 
     span {

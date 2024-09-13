@@ -1,29 +1,26 @@
 @font-face { font-family: 'Undertale';
- src: url('Fontes/DeterminationMonoWebRegular-Z5oq.ttf'); }
+src: url('Fontes/DeterminationMonoWebRegular-Z5oq.ttf'); }
     
 * {
     font-family: Undertale;
-    color: white;
-    
+
     a {
         text-decoration: none;
-        color: white;
     }
 }
-    
+
 body {
     margin: 0;
-    background-color: black;
+    background-color: rgb(240, 197, 9);
 }
 
 .top-bar-background {
     width: 100%;
-    background-color: black;
 }
 
 .yellowbutton {
     div:hover {
-        border-color: yellow;
+        border-color: red;
     }
 }
 
@@ -44,16 +41,19 @@ body {
 
 .top-bar {
     display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
-    border: solid white 5px;
+    border: solid #c79e56 5px;
+    border-radius: 6px;
     margin: 10px;
-    background-color: black;
+    background-color: #f0a346;
     width: 98%;
     height: 50px;
 
-    > a, .seq-botoes {
+    a, .seq-botoes {
         margin: 0 20px 0 20px;
+        color: rgb(0, 0, 0);
     }
 
     a:hover span {
@@ -104,18 +104,21 @@ body {
 .titulo {
     font-size: 100px;
     text-align: center;
-    border-bottom: solid white 5px;
+    border-bottom: solid #c79e56 5px;
+    color: white;
 }
 
 .subtitulo {
-    padding-top: 15px;
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
+    color: white;
 }
 
 .secao1 {
     margin: 0 30px 0 30px;
-    border: solid white 5px;  
+    border: solid #c79e56 5px;
+    background-color: #af6000;
+    border-radius: 10px;  
 }
 
 .bloco-alimentos {
@@ -124,13 +127,16 @@ body {
     align-items: center;
     margin: 10px auto 10px;
     width: 1000px;
-    border: solid white 5px;
+    border: solid rgb(219, 162, 4) 5px;
+    background-color: #e0850d;
+    border-radius: 10px;
     text-align: center;
 
     > span {
         font-size: 50px;
         border-bottom: solid white 5px;    
     }
+
 }
 
 .alimento {
@@ -138,7 +144,8 @@ body {
     grid-template-columns: 25% 45% 30%;
     align-items: center;
     justify-items: center;
-    border: solid white 5px;
+    border: solid rgb(255, 166, 0) 5px;
+    background-color: #ff9100;
     width: 900px;
     margin: 15px 0 15px 0;
 
@@ -160,6 +167,7 @@ body {
         height: 160px;
         width: 160px;
         border: solid white 5px;
+        border-radius: 5px;
     }
 
     p {
@@ -182,12 +190,13 @@ body {
         padding: 0px 10px 0 10px;    
     }
 
-    .compras {
+    .comprar {
 
         img {
             height: 50px;
             width: 50px;
-            padding: 0 20px 0 20px;
+            padding: 0 22px 0 20px;
+            background-color: white;
         }
     }
 
