@@ -146,6 +146,7 @@ body {
     align-items: center;
     justify-items: center;
     border: solid #c79e56 5px;
+    border-radius: 10px;
     background-color: rgb(134, 2, 2);
     width: 900px;
     margin: 15px 0 15px 0;
@@ -155,6 +156,10 @@ body {
         border-color: yellow;
         height: 60px;
         width: 60px;
+    }
+
+    span, img, p, .detalhes, .preco {
+        border-radius: 10px;
     }
 
     span {
@@ -186,17 +191,11 @@ body {
         height: 10px;
     }
 
-    .origem {
-        font-size: 26px;
-        border: solid white 5px;
-        padding: 0px 10px 0 10px;    
-    }
-
     .comprar {
 
         img {
             height: 50px;
-            width: 50px;
+            width: auto;
             padding: 0 22px 0 20px;
             background-color: white;
         }
