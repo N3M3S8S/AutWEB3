@@ -171,6 +171,7 @@ body {
     gap: 20px;
     grid-template-columns: 17.5% 17.5% 17.5% 17.5% 17.5%;
     justify-content: center;
+    justify-items: center;
 
     a:hover div {
         border-color: rgb(250, 217, 29);
