@@ -11,7 +11,7 @@ src: url('Fontes/DeterminationMonoWebRegular-Z5oq.ttf'); }
 
 body {
     margin: 0;
-    background-image: url(Imagens/Fundo.jpeg);
+    background-image: url(Imagens/Fundo.avif);
 }
 
 .top-bar-background {

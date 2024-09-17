@@ -134,7 +134,7 @@ body {
     display: flex;
     flex-direction: column;
     border: solid #c79e56 5px;
-    background-image: url(Imagens/Fundo.jpeg);
+    background-image: url(Imagens/Fundo.avif);
     background-repeat: repeat;
 }
 
