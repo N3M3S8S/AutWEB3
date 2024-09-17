@@ -46,7 +46,7 @@ body {
     align-items: center;
     border: solid #c79e56 5px;
     border-radius: 6px;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     background-color: rgb(134, 2, 2);
     width: 98%;
     height: 50px;
@@ -133,7 +133,9 @@ body {
 .secao1 {
     display: flex;
     flex-direction: column;
-    border: solid #c79e56 5px; 
+    border: solid #c79e56 5px;
+    background-image: url(Imagens/Fundo.jpeg);
+    background-repeat: repeat;
 }
 
 .titulo {
