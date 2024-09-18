@@ -217,3 +217,15 @@ body {
         line-height: 20px;
     }
 }
+
+.creditos {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    color: white;
+    column-gap: 20px;
+    font-size: 24px;
+}

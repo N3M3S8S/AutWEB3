@@ -209,58 +209,13 @@ body {
     }
 }
 
-.detalhes {
-    display: flex;
-    justify-content: center;
-    height: 300px;
-    width: 100%;
-    margin: 15px 0 30px 0;
-
-    img {
-        height: 300px;
-        width: auto;
-        margin: 0 30px 0 30px;
-    }
-}
-
-.seq-coment {
-    display: grid;
-    row-gap: 20px;
-    grid-template-columns: 30.7% 30.7% 30.7%;
-    justify-content: space-evenly;
-    padding: 15px 0 15px 0;
-    justify-items: center;
-}
-
-.comentario {
-    display: flex;
-    border: solid white 5px;
-    height: 100px;
-    width: 400px;
-    align-items: center;
-
-    img {
-        height: 90px;
-        width: 90px;
-        margin-left: 10px;
-    }
-
-    p {
-        font-size: 20px;
-        margin: 20px;
-        word-wrap: break-word;    
-    }
-}
-
 .creditos {
     display: flex;
-    border: solid white 5px;
-    height: 50px;
-    line-height: 50px;
     justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 98%;
+    color: white;
     column-gap: 20px;
-
-    span {
-        font-size: 25px;
-    }
+    font-size: 24px;
 }
