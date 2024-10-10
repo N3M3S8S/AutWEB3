@@ -9,6 +9,12 @@ src: url('Fontes/DeterminationMonoWebRegular-Z5oq.ttf'); }
     }
 }
 
+@keyframes example {
+    0%   {bottom: 0px;}
+    50%  {bottom: 40px;}
+    100% {bottom: 0px;}
+  }
+
 body {
     margin: 0;
     background-color: black;
@@ -109,6 +115,17 @@ body {
     img {
         height: 350px;
         width: auto;
+        position: relative;
+        animation-name: example;
+        animation-duration: 1s;
+        animation-play-state: paused;
+    }
+
+    div:hover img{
+        animation-name: example;
+        animation-duration: 1s;
+        animation-play-state: running;
+        animation-iteration-count: infinite;
     }
 }
 
