@@ -1,0 +1,45 @@
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    padding: 10px;
+    column-gap: 10px;
+    position: relative;
+
+    >div:hover {
+        border-color: blue;
+        background-color: #9a9;
+        box-shadow: 0 0 5px black;
+    }
+}
+
+.menu-item-container {
+    border: solid 1px gray;
+    background-color: #bbb;
+    padding: 10PX;
+}
+
+.menu-subitem-container {
+    display: none;
+    position: absolute;
+    background-color: #bbb;
+    border: solid 1px black;
+    top: 50px;
+    width: 150px;
+    left: 175px;
+
+    div:hover {
+        color: aqua;
+        background-color: #9a9;
+    }
+
+    div {
+        padding: 10px;
+    }
+}
+
+.menu-item-container:hover .menu-subitem-container {
+    display: flex;
+    flex-direction: column;
+}
