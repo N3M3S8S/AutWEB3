@@ -1,3 +1,5 @@
+body {margin: 0;}
+
 .menu-container{
     display: flex;
     justify-content: center;
@@ -53,6 +55,7 @@
     border: 1px solid #777;
     left: 152px;
     top: -1px;
+    width: 160px;
 
     div {
         padding: 10px;
