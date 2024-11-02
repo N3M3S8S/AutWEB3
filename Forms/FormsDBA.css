@@ -11,10 +11,10 @@ body {
 .secao-login {
     margin: 50px auto;
     height: 660px;
-    width: 1040px;
+    width: 78.2%;
     border-left: 3px solid #0ed286;
     display: grid;
-    grid-template-columns: 545px 495px;
+    grid-template-columns: 52.5% 47.5%;
     color: white;
 }
 
