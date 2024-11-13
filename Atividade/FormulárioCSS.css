@@ -1,0 +1,40 @@
+body{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(62, 57, 134);
+}
+
+.formulario {
+    height: 650px;
+    width: 450px;
+    background-color: gray;
+
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.titulo {    
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+
+    span {
+        font-size: 25px;
+    }
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+
+.campo {
+    input {
+        width: 120px;
+    }
+}

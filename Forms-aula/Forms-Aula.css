@@ -1,0 +1,18 @@
+.container {
+    border:  1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    font-size: 25px;
+    height: 30px;
+    border: 1px solid #aaa;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+input:focus{
+    background-color: white;
+}
