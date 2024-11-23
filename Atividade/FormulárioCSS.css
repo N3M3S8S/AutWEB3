@@ -1,40 +1,39 @@
-body{
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(62, 57, 134);
-}
+body{margin: 0;display: flex; align-items: center; justify-content: center; height: 100vh;
+background-color: purple;}
 
-.formulario {
-    height: 650px;
-    width: 450px;
-    background-color: gray;
+.Form {
+    height: 600px;
+    width: 475px;
+    background-color: bisque;
+    border-radius: 10px;
 
-    > div {
+    > .Title {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 }
 
-.titulo {    
-    height: 60px;
-    background-color: rgb(255, 255, 255);
+.Title {
+    height: 50px;
 
     span {
-        font-size: 25px;
+        text-decoration: underline;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
 
-.campos {
+.Form-body {
     display: grid;
     grid-template-columns: 50% 50%;
-    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
 }
 
-.campo {
-    input {
-        width: 120px;
-    }
+.Field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

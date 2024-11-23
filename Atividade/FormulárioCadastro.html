@@ -3,26 +3,39 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CADASTRO</title>
+    <title>
+        Formulário Aleatório
+    </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='FormulárioCSS.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <div class="formulario">
-        <div class="titulo">
-            <span>CADASTRO USUÁRIOS</span>
+    <div class="Form">
+        <div class="Title">
+            <span>CADASTRAR USUÁRIOS</span>
         </div>
-        <div class="campos">
-            <div class="campo">
-                <label for="Nome">Nome: </label>
-                <input type="text" name="NomeTex" id="Nome">
+        <form action="" method="get" class="Form-body">
+            <div class="Field">
+                <label for="Nome">Nome:</label>
+                <input type="text" name="Nome" id="Nome">
             </div>
-            <div class="campo">
-                <label for="Nacionalidade">Nacionalidade: </label>
-                <input type="Nacionalidade" name="Nacionalidade" id="Nacionalidade">
+            <div class="Field">
+                <label for="Nacionalidade">Nacionalidade:</label>
+                <select name="" id="">
+                    <option value="volvo">Brasileiro</option>
+                    <option value="saab">Estrangeiro</option>
+                </select>
             </div>
-        </div>
-    </div>   
+            <div class="Field">
+                <label for="CPF">CPF:</label>
+                <input type="text" name="CPF" id="CPF">
+            </div>
+            <div class="Field">
+                <label for="Senha">Senha:</label>
+                <input type="password" name="Senha" id="Senha">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
