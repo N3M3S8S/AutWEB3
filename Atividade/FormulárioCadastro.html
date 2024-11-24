@@ -8,7 +8,7 @@
     </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='FormulárioCSS.css'>
-    <script src='main.js'></script>
+    <script src='FormulárioJavaS.js'></script>
 </head>
 <body>
     <div class="Form">
@@ -16,24 +16,68 @@
             <span>CADASTRAR USUÁRIOS</span>
         </div>
         <form action="" method="get" class="Form-body">
-            <div class="Field">
-                <label for="Nome">Nome:</label>
-                <input type="text" name="Nome" id="Nome">
+            <div class="Extern" id="ex">
+                <span>Teste</span>
+                <div class="Field">
+                    <label for="Log">Logradouro:</label>
+                    <input type="Logradouro" name="Logradouro" id="Logradouro">
+                </div>
+                <div class="Field">
+                    <label for="Numero">Número:</label>
+                    <input type="Numero" name="Numero" id="Numero">
+                </div>
+                <div class="Field">
+                    <label for="Numero">Número:</label>
+                    <input type="Numero" name="Numero" id="Numero">
+                </div>
+                <div class="Field">
+                    <label for="Numero">Número:</label>
+                    <input type="Numero" name="Numero" id="Numero">
+                </div>
+                <div class="Field">
+                    <label for="Numero">Número:</label>
+                    <input type="Numero" name="Numero" id="Numero">
+                </div>
+                <div class="Field">
+                    <label for="Numero">Número:</label>
+                    <input type="Numero" name="Numero" id="Numero">
+                </div>
+                <input type="button" value="Confirmar" onclick="hideDiv()">                
             </div>
-            <div class="Field">
-                <label for="Nacionalidade">Nacionalidade:</label>
-                <select name="" id="">
-                    <option value="volvo">Brasileiro</option>
-                    <option value="saab">Estrangeiro</option>
-                </select>
-            </div>
-            <div class="Field">
-                <label for="CPF">CPF:</label>
-                <input type="text" name="CPF" id="CPF">
-            </div>
-            <div class="Field">
-                <label for="Senha">Senha:</label>
-                <input type="password" name="Senha" id="Senha">
+            <div class="Intern">
+                <div class="Field">
+                    <label for="Nome">Nome:</label>
+                    <input type="text" name="Nome" id="Nome">
+                </div>
+                <div class="Field">
+                    <label for="Nacionalidade">Nacionalidade:</label>
+                    <select name="Nacionalidade" id="Nacionalidade">
+                        <option value="Brasileiro">Brasileiro</option>
+                        <option value="Estrangeiro">Estrangeiro</option>
+                    </select>
+                </div>
+                <div class="Field">
+                    <label for="CPF">CPF:</label>
+                    <input type="text" name="CPF" id="CPF">
+                </div>
+                <div class="Field">
+                    <label for="Senha">Senha:</label>
+                    <input type="password" name="Senha" id="Senha">
+                </div>
+                <div class="Field">
+                    <label for="DataNasc">Nascimento:</label>
+                    <input type="date" name="DataNas" id="DataNas">
+                </div>
+                <div class="Field">
+                    <label for="Email">Email:</label>
+                    <input type="text" name="Email" id="Email">
+                </div>
+                <div>
+                    <span>Endereço:</span>
+                </div>
+                <div>
+                    <input type="button" value="Adicionar/Editar Endereço" onclick="showDiv()">
+                </div>
             </div>
         </form>
     </div>
