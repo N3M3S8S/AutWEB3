@@ -48,7 +48,7 @@ background-color: purple;}
     position: absolute;
     background-color: azure;
     width: 400px;
-    height: 100px;
+    row-gap: 10px;
 }
 
 .Field {
