@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='form01.css'>
+    <script src="Form01.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="telalogin" id="telalogin">
+            <form action="">
+                <div class="titulo">
+                    <label>
+                        Cadastro de Usuário
+                        <script>
+                            document.write("<h3>Meu primeiro JavaScript</h3>")
+                        </script>
+                        <div id = "msg" style="color: red; font-size: 15px;">
+                            <script></script>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <label>E-mail: </label> <br>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label>Senha: </label> <br>
+                    <input type="password" name="senha">
+                </div>
+                <div>
+                    <label>Nome: </label> <br>
+                    <input type="text" name="nome">
+                </div>
+                <div>
+                    <label>Data de Nascimento: </label> <br>
+                    <input type="date" name="datanascimento">
+                </div>
+                <div class="buttoncontainer">
+                    <div class="button" >Enviar</div>
+                    <div class="button" onclick="mudarback(); ">Mudar Back</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
