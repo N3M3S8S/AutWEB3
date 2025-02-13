@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cartoon Play - Crie A Sua Conta Agora!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Create.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Geral.css'>
+    <link rel='shortcut icon' type="image" href="Imagens/IconPlaceHolder.png">
+    <script src="https://kit.fontawesome.com/236f23f4be.js" crossorigin="anonymous"></script>
+    <script src='JavaScript/Geral.js'></script>
+    <script src="JavaScript/Create.js"></script>
+</head>
+<body class="" id="all">
+    <div class="fixed">
+        <div class="top-bar" id="tb">
+            <a href="About.html">
+                <img src="Imagens/Placeholder (2).png" alt="" height="30px" id="imgLi"> <!--Atenção, esta imagem é um placeholder-->
+                <img src="Imagens/Placeholderwhite.png" alt="" height="30px" id="imgDa"> <!--Atenção, esta imagem é um placeholder-->
+            </a>
+            <div class="men-seq">
+                <div class="menus">
+                    <i class="fa-solid fa-play" onclick="window.location = 'MainPage.html'"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-gear" id="gear"></i>
+                    <div class="sub-menus" id="sub-menu">
+                        <div onclick="changeTheme()">TEMA</div>
+                    </div>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-user" id="user" onclick="user()"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-clipboard" id="user" onclick="window.location = 'Plans.html'"></i>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="background background-white" id="bg">
+        <div class="main-div" id="FormLogin">
+            <form action="LoginPage.html" method="get" class="form" id="CreateFor" name="CreateFor" autocomplete="on">
+                <div class="title">
+                    <span>Criar Conta</span>
+                </div>
+                <div class="req" id="req">
+                    <div class="field" id="f-n">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nomeUs" onfocus="remError('f-n')" required> 
+                        <span id="msgNa"></span>
+                    </div>
+                    <div class="field" id="f-a">
+                        <label for="apelido">Apelido:</label>
+                        <input type="text" name="apelido" id="apelido" onfocus="remError('f-a')" required>
+                        <span id="msgAp"></span>
+                    </div>
+                    <div class="field" id="f-e">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" onfocus="remError('f-e')" required autocomplete="email">
+                        <span id="msgEm"></span>
+                    </div>
+                    <div class="field" id="f-s">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" onfocus="remError('f-s')" required autocomplete="new-password">
+                        <span id="msgSen"></span>
+                    </div>
+                    <div class="field" id="f-cs">
+                        <label for="Consenha">Confirme a Senha:</label>
+                        <input type="password" name="Consenha" id="Consenha" onfocus="remError('f-cs')" required autocomplete="new-password">
+                        <span id="msgCS"></span>
+                    </div>
+                    <div class="CreateAct">
+                        <input type="button" value="Próximo Passo" id="btnsubmit1" onclick="verificaCamposCriar()">    
+                    </div>
+                </div>
+                <div class="final" id="final">
+                    <div>
+                        <img src="Imagens/MuchoTexto2.webp" alt="">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="termos" id="termos" required>
+                        <label for="termos">Li e aceito os <a href="Termos.html">Termos de Uso</a></label>
+                    </div>
+                    <div class="CreateAct">
+                        <input type="button" value="Finalizar Criação" id="btnsubmit2" onclick="criarConta('nomeUs', 'email','senha', 'apelido')">    
+                    </div>
+                </div>
+                <div>
+                    <span>Já tem uma conta? <a onclick="user()" style="cursor: pointer;">Entrar</a></span>
+                </div>
+            </form>     
+        </div>
+    </div>   
+</body>
+</html>

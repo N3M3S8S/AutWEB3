@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cartoon Play - Planos Disponíveis</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Plans.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Geral.css'>
+    <link rel='shortcut icon' type="image" href="Imagens/IconPlaceHolder.png">
+    <script src='JavaScript/Geral.js'></script>
+    <script src="JavaScript/Plans.js"></script>
+    <script src="https://kit.fontawesome.com/236f23f4be.js" crossorigin="anonymous"></script>
+</head>
+<body class="" id="all">
+    <div class="fixed">
+        <div class="top-bar" id="tb">
+            <a href="About.html">
+                <img src="Imagens/Placeholder (2).png" alt="" height="30px" id="imgLi"> <!--Atenção, esta imagem é um placeholder-->
+                <img src="Imagens/Placeholderwhite.png" alt="" height="30px" id="imgDa"> <!--Atenção, esta imagem é um placeholder-->
+            </a>
+            <div class="men-seq">
+                <div class="menus">
+                    <i class="fa-solid fa-play" onclick="window.location = 'MainPage.html'"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-gear" id="gear"></i>
+                    <div class="sub-menus" id="sub-menu">
+                        <div onclick="changeTheme()">TEMA</div>
+                    </div>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-user" id="user" onclick="user()"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-clipboard" id="user" onclick="window.location = 'Plans.html'"></i>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="background">
+        <span class="title">PLANOS</span>
+        <table class="plans-table">
+            <tr class="titles">
+                <td></td>
+                <td class="start">GRATUITO</td>
+                <td>PREMIUM</td>
+                <td class="end">DELUXE</td>
+            </tr>
+            <tr class="rows">
+                <td class="start"><span>Acesso Aos Desenhos Clássicos</span></td>
+                <td><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+                <td><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+                <td class="end"><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+            </tr>
+            <tr class="rows">
+                <td class="start"><span>Interação com a comunidade</span></td>
+                <td><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+                <td><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+                <td class="end"><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+            </tr>
+            <tr class="rows">
+                <td class="start"><span>Sem anúncios</span></td>
+                <td><i class="fa-solid fa-x" style="color: #ff0000;"></i></td>
+                <td><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+                <td class="end"><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+            </tr>
+            <tr class="rows">
+                <td class="start"><span>Compartilhamento de conta</span></td>
+                <td><i class="fa-solid fa-x" style="color: #ff0000;"></i></td>
+                <td><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+                <td class="end"><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+            </tr>
+            <tr class="rows">
+                <td class="start"><span>Download De Episódios</span></td>
+                <td><i class="fa-solid fa-x" style="color: #ff0000;"></i></td>
+                <td><i class="fa-solid fa-x" style="color: #ff0000;"></i></td>
+                <td class="end"><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+            </tr>
+            <tr class="rows">
+                <td class="start"><span>Episódios Novos em primeira mão</span></td>
+                <td><i class="fa-solid fa-x" style="color: #ff0000;"></i></td>
+                <td><i class="fa-solid fa-x" style="color: #ff0000;"></i></td>
+                <td class="end"><i class="fa-sharp fa-solid fa-check" style="color: #63E6BE;"></i></td>
+            </tr>
+            <tr class="rows">
+                <td class="start"><span>Valores</span></td>
+                <td><span>-</span></td>
+                <td><span>R$ 20,00</span></td>
+                <td class="end"><span>R$ 30,00</span></td>
+            </tr>
+            <tr class="rows">
+                <td class="start"></td>
+                <td class="ho" onclick="passaDados('0', 'MainPage.html', 'LoginPage.html')"><i class="fa-regular fa-square un"></i><i class="fa-regular fa-square-check ch"></i></td>
+                <td class="ho" onclick="passaDados('20,00', 'BuyPage.html', 'LoginPage.html')"><i class="fa-regular fa-square un"></i><i class="fa-regular fa-square-check ch"></i></td>
+                <td class="end ho" onclick="passaDados('30,00', 'BuyPage.html', 'LoginPage.html')"><i class="fa-regular fa-square un"></i><i class="fa-regular fa-square-check ch"></i></td>
+            </tr>
+        </table>
+        <span class="title">POR QUE ASSINAR?</span>
+        <div class="text-image">
+            <div class="text">
+                <h1>GRATUITO</h1>
+                <p>Este plano é perfeito para você que acabou de acessar o site e deseja conhecê-lo um pouco mais para, posteriomente, ao seu desejo, evoluir às
+                outras assinaturas. Com este plano, a sua principal vantagem é ter acesso a todo o catálogo público! Além disso, também é possível compartilhar
+                suas opiniões através dos comentários ou dos fóruns!</p>
+            </div>
+            <div class="img-holder">
+                <img src="Imagens/pantera1.png" alt="">
+            </div>
+        </div>
+        <div class="text-image">
+            <div class="text">
+                <h1>PREMIUM</h1>
+                <p>Este plano é para você que, depois de explorar um pouco o nosso site decidiu dar uma chance para ele e, por consequência, deseja assinar este
+                    plano para nos ajudar. Com este plano, você já tem acesso a episódios sem qualquer interrupções, além de ser capaz de compartilhar essa conta
+                    com outros três usuários para que eles também desfrutem deste benefício! Perfeito para você que quer nos ajudar.</p>
+            </div>
+            <div class="img-holder">
+                <img src="Imagens/pantera2.png" alt="">
+            </div>
+        </div>
+        <div class="text-image">
+            <div class="text">
+                <h1>DELUXE</h1>
+                <p>Esse plano é para você, meu colega, que gostou tanto dos nossos serviços que deseja estar ainda mais por dentro do que nós estamos fazendo! Entre
+                   as principais vantagens, além dos benefícios do plano anterior, você ainda terá o acesso a novos episódios em primeira mão para não ter chances de
+                   receber spoilers! Da mesma forma, ainda terá acesso à possibilidade de baixar episódios para assistir onde quer que você esteja! Este plano é perfeito
+                   para você que deseja usufruir da melhor maneira os nossos serviços!
+                </p>
+            </div>
+            <div class="img-holder">
+                <img src="Imagens/pantera3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="secao-final"> 
+        <div>
+            <a href="">
+                <img src="Imagens/Placeholder (2).png" alt="" height="30px" id="imgLi"> <!--Atenção, esta imagem é um placeholder-->
+                <img src="Imagens/Placeholderwhite.png" alt="" height="30px" id="imgDa">
+            </a>
+        </div>
+        <div class="textos-finais">
+            <a href=""> 
+                <span>SOBRE</span>
+            </a>
+            <a href="">
+                <span>EQUIPE</span>
+            </a>
+            <a href="">
+                <span>ANUNCIE</span>
+            </a>
+            <a href="">
+                <span>CONTATO</span>
+            </a>
+            <a href="">
+                <span>PRIVACIDADE</span>
+            </a>
+        </div>
+        <div class="textos-finais">
+            <a href="">
+                <div class="bolinha"> 
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </a>
+            <a href="">
+                <div class="bolinha"> 
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </a>
+            <a href="">
+                <div class="bolinha"> 
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </a>
+            <a href="">
+                <div class="bolinha"> 
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </a>
+            <a href="">
+                <div class="bolinha"> 
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+            </a>
+            <a href="">
+                <div class="bolinha"> 
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </a>
+            <a href="">
+                <div class="bolinha"> 
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </a>
+            <a href="">
+                <div class="bolinha"> 
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </a>
+            <a href="">
+                <div class="bolinha"> 
+                    <i class="fa-solid fa-rss"></i>
+                </div>
+            </a>
+        </div>
+    </div>   
+</body>
+</html>

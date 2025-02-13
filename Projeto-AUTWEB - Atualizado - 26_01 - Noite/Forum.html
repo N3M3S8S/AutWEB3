@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cartoon Play - Assista Agora!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Forum.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Geral.css'>
+    <link rel='shortcut icon' type="image" href="Imagens/IconPlaceHolder.png">
+    <script src="https://kit.fontawesome.com/236f23f4be.js" crossorigin="anonymous"></script>
+    <script src='JavaScript/Geral.js'></script>
+    <script src="JavaScript/Forum.js"></script>
+</head>
+<body class="" id="all">
+    <div class="fixed">
+        <div class="top-bar" id="tb">
+            <a href="About.html">
+                <img src="Imagens/Placeholder (2).png" alt="" height="30px" id="imgLi"> <!--Atenção, esta imagem é um placeholder-->
+                <img src="Imagens/Placeholderwhite.png" alt="" height="30px" id="imgDa"> <!--Atenção, esta imagem é um placeholder-->
+            </a>
+            <div class="men-seq">
+                <div class="menus">
+                    <i class="fa-solid fa-play" onclick="window.location = 'MainPage.html'"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-gear" id="gear"></i>
+                    <div class="sub-menus" id="sub-menu">
+                        <div onclick="changeTheme()">TEMA</div>
+                    </div>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-user" id="user" onclick="user()"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-clipboard" id="user" onclick="window.location = 'Plans.html'"></i>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="background" id="bg">
+        <div class="blog">
+            <div class="left">
+                <div class="titulo">
+                    <span>SEUS POSTS</span>
+                </div>
+                <div class="emp">
+                    <i class="fa-solid fa-users-slash"></i>
+                    <span>Oh, não!</span>
+                    <span>Você ainda não interagiu com os outros usuários da nossa plataforma!</span>
+                    <span>O que acha de mudar isso criando um <a>Novo Post?</a></span>
+                </div>
+            </div>
+            <div class = "center" id="cen">
+                <div class="seletores">
+                    <button onclick="changePostsOfc()">POSTS OFICIAIS</button>
+                    <button onclick="changePostsPub()">POSTS PÚBLICOS</button>
+                </div>
+                <div class="ofc">
+                    <div class="post">
+                        <div class="titular">
+                            <img src="Imagens/IconPlaceHolder.png" alt="">
+                            <span id="user">Cartoon Play</span>
+                        </div>
+                        <span class="texto" id="text">
+                            Galera, o que vocês estão esperando? Já viram o novo desenho do mês? Se você tiver um tempinho, seria muito bom dar uma olhada em <a href="MainPage.html">Tom & Jerry</a>!
+                        </span>
+                        <div class="vote">
+                            <div class="arr">
+                                <i class="fa-solid fa-play fa-rotate-270"></i>
+                                <i class="fa-solid fa-play fa-rotate-90"></i>
+                            </div>
+                            <div class="counter">
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub">
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="titulo">
+                    <span>PRINCIPAIS NOTÍCIAS</span>
+                </div>
+                <div class="news">
+                    <span>As raças por trás dos cães mais famosos dos desenhos animados da TV - MSN</span>
+                    <span class="desc">Assim como na vida real, cães de desenho animado são muitas vezes o melhor amigo do homem. Há décadas, esses peludos notáveis têm sido usados como ajudantes cômicos, heróis e até como vilões. Mas você já se perguntou quais são suas verdadeiras raças? Pluto, Snoopy, Scooby-Doo e muitos outros: todos esses famosos doguinhos são inspirados em raças reais!</span>
+                </div>
+                <div class="news">
+                    <span>Todo mundo pensava que essa personagem era uma princesa da Disney, mas não era… - Adoro Cinema</span>
+                    <span class="desc">É curioso como cria-se uma aura magnética e, às vezes misteriosa, em torno do império Disney. Um dos pontos que fomentam debates até hoje é estabelecer quais personagens realmente são as princesas oficiais do estúdio, algo que, inclusive, foi ironizado em Moana 2 pela própria heroína.</span>
+                </div>
+                <div class="news">
+                    <span>Capitão Planeta está de volta em uma nova série de quadrinhos - Nerdizmo</span>
+                    <span class="desc">Já se passaram 33 anos desde que a série original de desenhos animados dos anos 90 chegou ao fim, e a história agora continuará com uma versão mais velha e de barba verde do Captain Planet. Captain Planet e os Planeteers eram um grupo de heróis adolescentes de todo o mundo que possuíam poderes elementares, convocando seu campeão Capitão Planeta para ajudá-los a combater a poluição e as mudanças climáticas.</span>
+                </div>
+            </div>
+        </div>
+        <div class="secao-final"> 
+            <div>
+                <a href="">
+                    <img src="Imagens/Placeholder (2).png" alt="" height="30px" id="imgLi"> <!--Atenção, esta imagem é um placeholder-->
+                    <img src="Imagens/Placeholderwhite.png" alt="" height="30px" id="imgDa">
+                </a>
+            </div>
+            <div class="textos-finais">
+                <a href=""> 
+                    <span>SOBRE</span>
+                </a>
+                <a href="">
+                    <span>EQUIPE</span>
+                </a>
+                <a href="">
+                    <span>ANUNCIE</span>
+                </a>
+                <a href="">
+                    <span>CONTATO</span>
+                </a>
+                <a href="">
+                    <span>PRIVACIDADE</span>
+                </a>
+            </div>
+            <div class="textos-finais">
+                <a href="">
+                    <div class="bolinha"> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bolinha"> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bolinha"> 
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bolinha"> 
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bolinha"> 
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bolinha"> 
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bolinha"> 
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bolinha"> 
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="bolinha"> 
+                        <i class="fa-solid fa-rss"></i>
+                    </div>
+                </a>
+            </div>
+        </div> 
+    </div>   
+</body>
+</html>

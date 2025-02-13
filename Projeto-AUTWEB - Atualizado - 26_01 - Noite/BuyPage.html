@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cartoon Play - Planos Disponíveis</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Buy.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Geral.css'>
+    <script src='JavaScript/Geral.js'></script>
+    <script src="JavaScript/Buy.js"></script>
+    <link rel='shortcut icon' type="image" href="Imagens/IconPlaceHolder.png">
+    <script src="https://kit.fontawesome.com/236f23f4be.js" crossorigin="anonymous"></script>
+</head>
+<body class="" id="all">
+    <div class="fixed">
+        <div class="top-bar" id="tb">
+            <a href="About.html">
+                <img src="Imagens/Placeholder (2).png" alt="" height="30px" id="imgLi"> <!--Atenção, esta imagem é um placeholder-->
+                <img src="Imagens/Placeholderwhite.png" alt="" height="30px" id="imgDa"> <!--Atenção, esta imagem é um placeholder-->
+            </a>
+            <div class="men-seq">
+                <div class="menus">
+                    <i class="fa-solid fa-play" onclick="window.location = 'MainPage.html'"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-gear" id="gear"></i>
+                    <div class="sub-menus" id="sub-menu">
+                        <div onclick="changeTheme()">TEMA</div>
+                    </div>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-user" id="user" onclick="user()"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-clipboard" id="user" onclick="window.location = 'Plans.html'"></i>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="background">
+        <div class="right pix" id="mainDiv">
+            <div class="cartaoDiv" id="CardD">
+                <span>Não funciona ainda :P</span>
+            </div>
+            <div class="pixDiv" id="PixD">
+                <span>Efetue o pagamento através do código:</span>
+                <img src="Imagens/Pix20.jpeg" id="20,00" alt="">
+                <img src="Imagens/Pix30.jpeg" id="30,00" alt="">
+                <span id="val"></span>
+                <span class="dis">Será necessário realizar este pagamento mensalmente.<br>Esta ação pode ser automatizada com um cartão.</span>
+                <button onclick="pagEf()">PAGAMENTO EFETUADO</button>
+            </div>
+            <div class="seletor" id="sel" onclick="trocarMet()">
+                <i class="fa-brands fa-pix" id="PIX"></i>
+                <i class="fa-regular fa-credit-card" id="CARD"></i>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

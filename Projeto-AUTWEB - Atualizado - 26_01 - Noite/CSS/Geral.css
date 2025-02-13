@@ -1,0 +1,227 @@
+/*Todas as configurações CSS aqui presentes devem estar ligadas a todos os arquivos html, eles contém dados essenciais*/
+
+.white-theme {
+    #imgLi {
+        display: block;
+    }
+    #imgDa {
+        display: none;
+    }
+
+    .fixed { 
+        .top-bar {
+            background-color: #FFC0CB;
+            border-bottom: 1px solid black;
+
+            #imgDa {
+                display: none;
+            }
+
+            .men-seq {
+                > div:hover {
+                    background-color: rgba(238, 239, 245, 0.5);
+                }
+            }
+
+            .sub-menus {
+                background-color: #FFC0CB;
+
+                div:hover {
+                    background-color: rgba(238, 239, 245, 0.5);
+                }
+            }
+        }
+        
+        .shadow {
+            background-image: linear-gradient(360deg, rgba(255,0,0,0), rgba(0, 0, 0, 0.5))
+        }
+    }
+
+    .secao-final {
+        background-color:#FFC0CB;
+        color: black;
+
+        .bolinha {
+            background-color: #ffdfea;
+            border: 1px solid black;
+            color: black !important;
+        }
+    }
+
+    .background {
+        background-color: #ffdfea;
+    }
+}
+
+.dark-theme {
+    #imgLi {
+        display: none;
+    }
+
+    .fixed{
+        .top-bar {
+            background-color: black;
+            border-bottom: 1px solid violet;
+
+            #imgDa {
+                display: block;
+            }
+
+            i {
+                color: white;
+            }
+
+            .men-seq {
+                > div:hover {
+                    background-color: rgba(107, 119, 160, 0.5);
+                }
+            }
+
+            .sub-menus {
+                background-color: rgb(0, 0, 0);
+
+                div:hover {
+                    background-color: rgba(107, 119, 160, 0.5);
+                }
+            }
+        }
+
+        .shadow {
+            background-image: linear-gradient(360deg, rgba(255,0,0,0), rgba(238, 130, 238, 0.5))
+        }
+    }
+
+    .secao-final {
+        background-color: black;
+        border-top: 1px solid violet;
+
+        a, .bolinha {
+            color: white !important;
+        }
+
+        .bolinha {
+            border: 1px solid violet;
+        }
+    }
+
+    .background {
+        background-color: black;
+    }
+}
+
+.fixed {
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    flex-direction: column;
+
+    .top-bar {
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+        .men-seq {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            column-gap: 10px;
+        }
+
+        .menus {
+            height: 100%;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+
+            i {
+                width: 80px;
+                height: 100%;
+                align-content: center;
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+
+        #gear:hover {
+            animation-name: gira;
+            animation-duration: 1s;
+        }
+
+        .menus:hover {
+            .sub-menus {
+                display: flex;
+            }
+        }
+
+        .sub-menus {
+            cursor: pointer;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50px;
+            width: 80px;
+            border-radius: 0 0 5px 5px;
+            border: violet solid;
+            border-width: 0 1px 1px 1px;
+
+            a, div {
+                border-radius: inherit;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .shadow {
+        height: 10px;
+        width: 100%;
+    }
+}
+
+.secao-final{
+    padding-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    row-gap: 20px;
+
+    img {
+        width: auto;
+        height: 50px;
+    }
+
+    > div {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .textos-finais{
+        column-gap: 15px;
+        span {
+            font-size: 14px;
+        }
+    }   
+
+    .bolinha{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        justify-content: center;
+
+        i {
+            line-height:30px;
+        }  
+    }
+}
+
+@keyframes gira {
+    to {transform: rotate(360deg);}
+}
+
+@keyframes desce {
+    from {top: 0;}
+    to {top: 50px;}
+}

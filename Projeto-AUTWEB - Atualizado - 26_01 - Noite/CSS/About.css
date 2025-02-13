@@ -1,0 +1,231 @@
+/* Todos os códigos a partir daqui definem o comportamento padrão da página 
+Isto é, quando o seu width for sueperior a 650px*/
+
+body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+a{text-decoration: none; color: black;};}
+
+.white-theme {
+    #imgDa {
+        display: none;
+    }
+
+    #imgLi {
+        display: block;
+    }
+
+    .background {
+        background-color: #ffdfea;
+
+        .text-image {
+            > button {
+                background-color: #FFC0CB;
+            }
+        }
+    }
+}
+
+.dark-theme {
+    color: white;
+
+    #imgDa {
+        display: block;
+    }
+
+    #imgLi {
+        display: none;
+    }
+
+    .background {
+        background-color: #000000;
+
+        .text-image {
+            > button {
+                background-color: #000000;
+                border-color: violet;
+                color: white;
+            }
+        }
+    }
+}
+
+.background {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-banner {
+    margin-top: 75px;
+}
+
+#Examples, #Plans {
+    flex-direction: row-reverse;
+}
+
+.text-image {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    margin-top: 20px;
+
+    .img-holder{
+        width: 532px;
+        justify-content: space-around;
+
+        img {
+            height: 300px;
+        }
+    }
+
+    .text {
+        word-wrap: break-word;
+        flex-direction: column;
+        h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        p {
+            max-width: 550px;
+            font-size: 24px;
+            text-align: justify;
+        }
+    }
+
+    > button {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 425px;
+        height: 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        transition-property: all;
+    }
+
+    > button:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+.minis {
+    transition: all 0.5s;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(255, 0, 225);
+    cursor: pointer;
+    color: white !important;
+
+    background-color: black;
+
+    .field-copy {
+        flex-direction: column; 
+        row-gap: 5px;
+        .input-copy {
+            border: 2px solid rgb(255, 0, 225);
+            border-radius: 5px;
+            background-color: rgb(0, 0, 0);
+            width: 150px;
+            height: 40px;
+        }
+
+        .button {
+            margin-top: 30px;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.minis:hover {
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+/* A partir deste momento, teremos a presença de "Media Queries", que definem o comportamento da página
+A partir de determinado width. Este width sempre será descrito após "max-width"*/
+
+@media screen and (max-width: 1150px) {
+    #Examples, #Plans {
+        flex-direction: column;
+    }
+
+    .text-image {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:650px) {   
+    .main-banner {
+        img {
+            height: 150px;
+        }
+    }
+
+    .text-image{
+        width: 425px;
+
+        button {
+            display: flex;
+        }
+
+        .img-holder {
+            display: none;
+        }
+
+        .LogAct, .CreateAct {
+            input{
+                width: 323px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 525px){
+    .text-image {
+        height: 100%;
+
+        img {
+            display: none;
+        }
+
+        .minis {
+            display: none;
+        }
+    }
+}
+
+/* A partir deste momento do código, serão descritos efeitos relacionados à animações, como
+O transform e o Keyframes, por exemplo*/
+
+@keyframes movimento-vertical {
+    from {transform: translateY(-82px);}
+}
+
+@keyframes girar {
+    to   {transform: rotate(360deg);}
+}
+
+@keyframes movimento-horizontal {
+    from {transform: translateX(-50px);}
+}
+
+@keyframes pop-in {
+    from {transform: scale(0.1);}
+    to   {transform: scale(1);}   
+}
+
+@keyframes engoleTela {
+    from {transform: scale(0.1);}
+    to   {transform: scale(22);}
+}

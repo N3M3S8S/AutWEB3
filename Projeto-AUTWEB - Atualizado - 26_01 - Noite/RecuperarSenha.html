@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cartoon Play - Recuperar Senha</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Recover.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Geral.css'>
+    <link rel='shortcut icon' type="image" href="Imagens/IconPlaceHolder.png">
+    <script src="https://kit.fontawesome.com/236f23f4be.js" crossorigin="anonymous"></script>
+    <script src="JavaScript/Geral.js"></script>
+    <script src='JavaScript/Recover.js' defer></script>
+</head>
+<body id="all" class="">
+    <div class="fixed">
+        <div class="top-bar" id="tb">
+            <a href="About.html">
+                <img src="Imagens/Placeholder (2).png" alt="" height="30px" id="imgLi"> <!--Atenção, esta imagem é um placeholder-->
+                <img src="Imagens/Placeholderwhite.png" alt="" height="30px" id="imgDa"> <!--Atenção, esta imagem é um placeholder-->
+            </a>
+            <div class="men-seq">
+                <div class="menus">
+                    <i class="fa-solid fa-play" onclick="window.location = 'MainPage.html'"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-gear" id="gear"></i>
+                    <div class="sub-menus" id="sub-menu">
+                        <div onclick="changeTheme()">TEMA</div>
+                    </div>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-user" id="user" onclick="user()"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-clipboard" id="user" onclick="window.location = 'Plans.html'"></i>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="background" id="bg">
+        <span id="ex">ACABOU PERDENDO A SENHA?<br>SEM PROBLEMAS, VAMOS ENCONTRÁ-LA!</span>
+        <div class="main-div" id="md">
+            <span>INSIRA O SEU EMAIL ABAIXO:</span>
+            <div class="field" id="f-e">
+                <input class="field" type="email" id="email">
+                <span id="msgEm"></span>
+            </div>
+            <div class="field">
+                <button class="field" id="sendEmail" onclick="valEmail('email')">ENVIAR</button>
+            </div>
+        </div>
+        <div class="main-div" id="md2">
+            <span>INSIRA O CÓDIGO DE VERIFICAÇÃO:</span>
+            <div class="cd-seq">
+                <div class="field cd">
+                    <input class="in" type="number" id="cd1" maxlength="1" oninput="changeFocus('cd', '2')">
+                </div>
+                <div class="field cd">
+                    <input class="in" type="number" id="cd2" oninput="changeFocus('cd', '3')">
+                </div>
+                <span>-</span>
+                <div class="field cd">
+                    <input class="in" type="number" id="cd3" oninput="changeFocus('cd', '4')">
+                </div>
+                <div class="field cd">
+                    <input class="in" type="number" id="cd4" oninput="changeFocus('sendCode', '')">
+                </div>
+            </div>
+            <div class="field">
+                <button class="field" id="sendCode" onclick="valcode()">ENVIAR</button>
+            </div>
+            <div>
+                <span id="CodeErr"></span>
+            </div>
+        </div>
+        <div class="main-div" id="md3">
+            <span>PRONTO! VOCÊ JÁ PODE TROCAR SUA SENHA:</span>
+            <div class="field">
+                <label for="newPass">Digite a sua nova senha:</label>
+                <input class="field" type="password" id="newPass">
+            </div>
+            <div class="field">
+                <label for="newPassCon">Confirme a sua nova senha:</label>
+                <input class="field" type="password" id="newPassCon">
+            </div>
+            <div class="field">
+                <button class="field" id="sendNewPass" onclick="valPass()">ENVIAR</button>
+            </div>
+            <div>
+                <span id="PassErr"></span>
+            </div>
+        </div>
+        <div class="Load" id="load">
+            <img src="Imagens/Placeholder.png" alt="" id="logo">
+        </div>
+    </div>   
+</body>
+</html>

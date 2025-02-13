@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cartoon Play - Crie A Sua Conta Agora!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/UserPage.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Geral.css'>
+    <link rel='shortcut icon' type="image" href="Imagens/IconPlaceHolder.png">
+    <script src="https://kit.fontawesome.com/236f23f4be.js" crossorigin="anonymous"></script>
+    <script src='JavaScript/Geral.js'></script>
+    <script src="JavaScript/Profile.js"></script>
+</head>
+<body class="" id="all">
+    <div class="fixed">
+        <div class="top-bar" id="tb">
+            <a href="About.html">
+                <img src="Imagens/Placeholder (2).png" alt="" height="30px" id="imgLi"> <!--Atenção, esta imagem é um placeholder-->
+                <img src="Imagens/Placeholderwhite.png" alt="" height="30px" id="imgDa"> <!--Atenção, esta imagem é um placeholder-->
+            </a>
+            <div class="men-seq">
+                <div class="menus">
+                    <i class="fa-solid fa-play" onclick="window.location = 'MainPage.html'"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-gear" id="gear"></i>
+                    <div class="sub-menus" id="sub-menu">
+                        <div onclick="changeTheme()">TEMA</div>
+                    </div>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-user" id="user" onclick="user()"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-clipboard" id="user" onclick="window.location = 'Plans.html'"></i>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="background background-white" id="bg">
+        <div class="profile">
+            <div class="foto-fav">
+                <img src="Imagens/PFP_Holder.jpg" id="pfp" alt="">
+                <span id="fv">DESENHO FAVORITO:</span>
+                <div class="fav"></div>
+            </div>
+            <div class="right">
+                <div class="fields">
+                    <div class="field">
+                        <label for="Name">Nome:</label>
+                        <span id="NoS">Null</span>
+                    </div>
+                    <div class="field">
+                        <label for="Nick">Apelido:</label>
+                        <span id="ApS">Null</span>
+                    </div>
+                    <div class="field">
+                        <label for="Plan">Plano:</label>
+                        <span id="PlS">Null</span>
+                    </div>
+                    <div class="field">
+                        <label for="Plan">Email:</label>
+                        <span id="EmS">Null</span>
+                    </div>
+                    <div class="cata-seq" id="curtdr">
+                        <span class="titulo">Desenho Curtidos:</span>
+                        <div class="empty">
+                            <span>Nenhum Desenho Foi Assistido Nesta Conta ou Sessão</span>
+                            <span>Assista um Desenho Para Que Ele Seja Adicionado Neste Seletor</span>
+                        </div>
+                        <div class="cart-seq" id="CurtCS">
+                            
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="editar()">EDITAR CONTA</button>
+                        <button onclick="sair()">SAIR DA CONTA</button>
+                    </div>
+                </div>
+            </div>
+            <span id="id">null</span>
+        </div>
+        <div class="changeData" id="Edit">
+            <form action="LoginPage.html" method="get" class="form" id="EditFor" name="EditFor" autocomplete="on">
+                <div class="title">
+                    <span>Alterar Dados</span>
+                </div>
+                <div class="req" id="req">
+                    <div class="field" id="f-n">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nomeUs" onfocus="remError('f-n')" required> 
+                        <span id="msgNa"></span>
+                    </div>
+                    <div class="field" id="f-a">
+                        <label for="apelido">Apelido:</label>
+                        <input type="text" name="apelido" id="apelido" onfocus="remError('f-a')" required>
+                        <span id="msgAp"></span>
+                    </div>
+                    <div class="field" id="f-e">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" onfocus="remError('f-e')" required autocomplete="email">
+                        <span id="msgEm"></span>
+                    </div>
+                    <div class="field" id="f-s">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" onfocus="remError('f-s')" required autocomplete="new-password">
+                        <span id="msgSen"></span>
+                    </div>
+                    <div class="field" id="f-cs">
+                        <label for="Consenha">Confirme a Senha:</label>
+                        <input type="password" name="Consenha" id="Consenha" onfocus="remError('f-cs')" required autocomplete="new-password">
+                        <span id="msgCS"></span>
+                    </div>
+                    <div class="CreateAct">
+                        <input type="button" value="FINALIZAR ALTERAÇÕES" id="btnsubmit" onclick="verificaCamposEditar()">    
+                    </div>
+                    <div class="CreateAct">
+                        <input type="button" value="CANCELAR ALTERAÇÕES" id="btnsubmit1" onclick="Cancelaeditar()">    
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>   
+</body>
+    <div class="cartoon-box" id="Tom & Jerry" onclick="playEp('https://www.youtube.com/embed/0S0L-iqUM-4?si=VzR2WvaTagI3tH2D', 'Tom & Jerry', 'Especial: Um Pouco de Ar Fresco!')">
+        <img src="Imagens/LogoTom.png" style="background-color: rgb(251, 255, 139);" alt="">
+    </div>
+    <div class="cartoon-box" id="A Pantera Cor-de-rosa">
+        <img style="background-color: hsl(334, 80%, 68%);" src="Imagens/pantera-cor-de-rosa.png" alt="" onclick="playEp('https://www.youtube.com/embed/_Nd9IbdR-eA?si=tgRU9bI1jjhapgMM', 'A Pantera Cor-de-rosa', 'A mão é mais rápida que o olho')">
+    </div>
+    <div class="cartoon-box" id="Angelina Ballerina">
+        <img style="background-color: hsl(334, 100%, 80%);" src="Imagens/AngelinaLogo-removebg-preview.png" alt="" onclick="playEp('https://www.youtube.com/embed/EeS6lOFwHKY?si=LWjZgPuk6N0cZSDA', 'Angelina Ballerina', 'A Casa de Angelina')">
+    </div>
+    <div class="cartoon-box" id="Três Espiãs Demais">
+        <img style="background-color: hsl(350, 98%, 81%);" src="Imagens/totally_spies.jpeg" alt="" onclick="playEp('https://www.youtube.com/embed/OpNM1VG1rpM?si=sY0JEaO6OEqu-qbO', 'Três Espiãs Demais', 'Pesadelo na natureza')">
+    </div>
+    <div class="cartoon-box" id="Winx Club">
+        <img style="background-color: hsl(334, 100%, 80%);" src="Imagens/WinxLogo.png" alt="" onclick="playEp('https://www.youtube.com/embed/Cb5wPj5sA0Y?si=et116FaxGsOu17rq', 'Winx Club', 'Um Acontecimento Inesperado')">
+    </div>
+    <div class="cartoon-box" id="Barbie">
+        <img style="background-color: hsl(302, 100%, 87%);" src="Imagens/barbie.jpeg" alt="" onclick="playEp('https://www.youtube.com/embed/ITQzUJCvi24?si=cdK2jzcT0J8TWBH4', 'Barbie', 'Barbie e a magia de aladus')">
+    </div>
+    <div class="cartoon-box" id="O Pão do Céu">
+        <img style="background-color: black;" src="Imagens/Jesus.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/FahhJ4iHokc?si=-ANQJLzxSYNuotmN', 'O Pão do Céu', 'O filho pródigo')">
+    </div>
+    <div class="cartoon-box" id="Madeline">
+        <img style="background-color: black;" src="Imagens/madeline.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/Tx-NxRSN-js?si=uc3h--tofsg_jMQC', 'Madeline', 'Madeline no balé')">
+    </div>
+    <div class="cartoon-box" id="Peixonauta">
+        <img style="background-color: rgb(0, 213, 255);" src="Imagens/PeixeForaDagua.png" alt="" onclick="playEp('https://www.youtube.com/embed/SdkGBGR5Bhw?si=9I-es9ZUE_DaYvO0', 'Peixonauta', 'O Caso do Mistério Crescente')">
+    </div>
+    <div class="cartoon-box" id="Scooby-Doo! Cadê você?">
+        <img style="background-color: hsl(157, 59%, 58%);" src="Imagens/Scooby Doo, Where Are You! (1969).jpeg" alt="" onclick="playEp('https://www.youtube.com/embed/-rt2gk6CCRs?si=DeEaMky5bD6aRQHs', 'Scooby-Doo! Cadê você?', 'Onde está o monstro')">
+    </div>
+    <div class="cartoon-box" id="Ben 10: Reboot">
+        <img style="background-color: rgb(1, 255, 128);" src="Imagens/BenTennyson.png" alt="" onclick="playEp('https://www.youtube.com/embed/AA3PFvQnDkY?si=rTmPuNRnLrO-banL', 'Ben 10: Reboot', 'Filtro de Água')">
+    </div>
+    <div class="cartoon-box" id="Caverna do dragão">
+        <img style="background-color: rgb(255, 95, 95);" src="Imagens/Dungeons and Dragons.jpeg" alt="" onclick="playEp('https://www.youtube.com/embed/FHEqZR2k1j0?si=HW7nlhWq9EQFEFaZ', 'Caverna do dragão', 'O portal do amanhecer')">
+    </div>
+    <div class="cartoon-box" id="Dragon Ball GT">
+        <img style="background-color: hsl(199, 86%, 44%);" src="Imagens/dragon_ballgt.png" alt="" onclick="playEp('https://www.youtube.com/embed/3n3itDDgmQQ?si=DB5DTK8e9LVSYYJT', 'Dragon Ball GT', 'Coração de criança')">
+    </div>
+    <div class="cartoon-box" id="Pokémon">
+        <img style="background-color: yellow;" src="Imagens/pokémon.png" alt="" onclick="playEp('https://www.youtube.com/embed/z3hMX65Khtg?si=nDhcBRalW9R33VbP', 'Pokémon', 'Eu escolho você!')">
+    </div>
+    <div class="cartoon-box" id="Super onze">
+        <img style="background-color: hsl(199, 86%, 44%);" src="Imagens/super11.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/oH4-GH1aheY?si=ZP7F7nxxnAA8JcAN', 'Super onze', 'Vamos ao futebol')">
+    </div>
+    <div class="cartoon-box" id="Meu amigãozão">
+        <img style="background-color: hsl(199, 86%, 44%);" src="Imagens/meuamigãozão.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/JZI0xGuy_H4?si=mcX-G27J_s-BAqgY', 'Meu amigãozão', 'Tem gosto para tudo')">
+    </div>
+    <div class="cartoon-box" id="X-men">
+        <img style="background-color: black;" src="Imagens/x-men.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/_72VbN96nEw?si=45fGOjIDhEHaqx2c', 'X-men', 'A estratégia')">
+    </div>
+    <div class="cartoon-box" id="Kiki butovisk">
+        <img style="background-color: rgb(255, 99, 99);" src="Imagens/kiki butovisk.png" alt="" onclick="playEp('https://www.youtube.com/embed/yFmWlArdmtA?si=fjxEwAnMkaP40czR', 'Kiki butovisk, um projeto de dublê', 'O penhasco da morte esmagador')">
+    </div>
+    <div class="cartoon-box" id="Super choque">
+        <img style="background-color: black;" src="Imagens/superchoque_logo.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/fw4yqfTdxyU?si=Y2b19VKmgjwSTuCZ', 'Super choque', 'Choque no sistema')">
+    </div>
+    <div class="cartoon-box" id="Liga da justiça">
+        <img style="background-color: black;" src="Imagens/ligadajustiça.jpeg" alt="" onclick="playEp('https://www.youtube.com/embed/OrHYsv75m_A?si=oPyA-iFTjHSJpdXi', 'Liga da justiça','Abertura')">
+    </div>
+    <div class="cartoon-box" id="Power Rangers">
+        <img style="background-color: black;" src="Imagens/Power_Rangers.png" alt="" onclick="playEp('https://www.youtube.com/embed/o4pd8lHWwYI?si=oQ3LCCrwlchFRTAU', 'Power Rangers','O dia da mudança')">
+    </div>
+    <div class="cartoon-box" id="Hora de aventura">
+        <img style="background-color: black;" src="Imagens/Hora de aventura.jpeg" alt="" onclick="playEp('https://www.youtube.com/embed/hTa-u3jTAFc?si=KYW9vuUbjvoDg5TE', 'Hora de aventura', 'Não olhe')">
+    </div>
+    <div class="cartoon-box" id="Peixonauta">
+        <img style="background-color: rgb(0, 213, 255);" src="Imagens/PeixeForaDagua.png" alt="" onclick="playEp('https://www.youtube.com/embed/SdkGBGR5Bhw?si=9I-es9ZUE_DaYvO0', 'Peixonauta', 'O Caso do Mistério Crescente')">
+    </div>
+    <div class="cartoon-box" id="Juro que vi">
+        <img style="background-color: rgb(0, 0, 0);" src="Imagens/juro_que_vi.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/CF9fo-YBCzU?si=6z9vYNqC-mUSCYuu', 'Juro que vi', 'Matinta Perera')">
+    </div>
+    <div class="cartoon-box" id="Historietas Assombradas (para Crianças Malcriadas)">
+        <img style="background-color: rgb(0, 0, 0);" src="Imagens/Historietas.jpeg" alt="" onclick="playEp('https://www.youtube.com/embed/VXnk2gA4VT0?si=_JwFgyjFH7IDybGm', 'Historietas Assombradas (para Crianças Malcriadas)', 'Totem da sabedoria')">
+    </div>
+    <div class="cartoon-box" id="A mansão maluca do professor Ambrósio">
+        <img style="background-color: hsl(0, 0%, 0%);" src="Imagens/A Mansão Maluca do Professor Ambrósio.jpeg" alt="" onclick="playEp('https://www.youtube.com/embed/izmtaPOW1q0?si=rWYWw7y8vAUujGD6', 'A mansão maluca do professor Ambrósil', 'A roda')">
+    </div>
+    <div class="cartoon-box" id="Turma da Mônica">
+        <img style="background-color: hsla(0, 0%, 0%, 0.91);" src="Imagens/TurmaMonica.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/AUebXlvQ8Bg?si=fVO-vRi0fjlls_PC', 'Turma da Mônica', 'Maratona Cebolinha e Cascão')">
+    </div>
+    <div class="cartoon-box" id="Tromba Trem">
+        <img style="background-color: rgb(0, 213, 255);" src="Imagens/Tromba-trem.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/3UzIUbHp0Mo?si=2dAdn6lYoLYSx3hE', 'Tromba Trem', 'Jornada indigesta')">
+    </div>
+    <div class="cartoon-box" id="SOS Fada Manu">
+        <img style="background-color: hsl(0, 0%, 0%);" src="Imagens/SOS Fada Manu.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/rESaRyn2_S8?si=1SKkvd_sh3slErxR', 'DogmoSOS Fada Manuns', 'Abertura')">
+    </div>
+    <div class="cartoon-box" id="Dogmons">
+        <img style="background-color: hsl(0, 0%, 0%);" src="Imagens/Dogmons.jpeg" alt="" onclick="playEp('https://www.youtube.com/embed/LjwU-ZHaCZQ?si=1oewyGidQ4PQB5qC', 'Dogmons', 'O portal')">
+    </div>
+    <div class="cartoon-box" id="Irmão do Jorel">
+        <img style="background-color: rgb(0, 0, 0);" src="Imagens/Irmão do Jorel.jpeg" alt="" onclick="playEp('https://www.youtube.com/embed/RPf8cYrA9wQ?si=jEkVutBqQBlAZKoD', 'Irmão do Jorel', 'Jardim da pesada')">
+    </div>
+    <div class="cartoon-box" id="Meu amigãozão">
+        <img style="background-color: hsl(199, 86%, 44%);" src="Imagens/meuamigãozão.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/JZI0xGuy_H4?si=mcX-G27J_s-BAqgY', 'Meu amigãozão', 'Tem gosto para tudo')">
+    </div>
+    <div class="cartoon-box" id="Osmar, a Primeira Fatia do Pão de Forma">
+        <img style="background-color: rgb(0, 0, 0);" src="Imagens/osmar.jpg" alt="" onclick="playEp('https://www.youtube.com/embed/CymlBcNYvdQ?si=cRi9y6jk1GoRAAOm', 'Osmar, a Primeira Fatia do Pão de Forma', 'O Caso do Mistério Crescente')">
+    </div>  
+</html>

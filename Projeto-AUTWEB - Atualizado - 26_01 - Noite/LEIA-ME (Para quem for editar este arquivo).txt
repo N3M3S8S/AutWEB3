@@ -1,0 +1,15 @@
+Atualização atual dos arquivos:
+TELA DE LOGIN - > Falta a verificação dos campos (email) - > todo resto funcional;
+TELA DE CRIAÇÃO -> Mesma coisa do de cima (email, senha) e perguntas complementares - > todo resto funcional;
+TELA DE TROCA DE SENHA - > Mesma coisa do de cima (email) - > todo resto funcional;
+TELA SOBRE NÓS - > trocar imagens/adicionar carrossel - > todo resto funcional;
+TELA DE PLANOS - > Falta adicionar mais alguns textos embaixo - > todo resto funcional;
+TELA DE CATÁLOGO - > Pendente (Fazer 08/01);
+TELA DO VÍDEO ANEXADO - > Pendente (Fazer 08/01).
+
+Gerais:
+
+Corrigir bug do menu de engrenagem (a animação aparece em cima da barra de navegação);
+Aprimorar responsividade, principalmente das outras páginas além do Login.html;
+Organizar dados de forma mais simples e legível;
+Adicionar comentários;

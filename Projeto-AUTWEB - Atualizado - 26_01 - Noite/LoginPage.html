@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cartoon Play - Entrar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Login.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Geral.css'>
+    <link rel='shortcut icon' type="image" href="Imagens/IconPlaceHolder.png">
+    <script src="https://kit.fontawesome.com/236f23f4be.js" crossorigin="anonymous"></script>
+    <script src="JavaScript/Geral.js"></script>
+    <script src='JavaScript/Login.js'></script>
+</head>
+<body class="" id="all">
+    <div class="fixed">
+        <div class="top-bar" id="tb">
+            <a href="About.html">
+                <img src="Imagens/Placeholder (2).png" alt="" height="30px" id="imgLi"> <!--Atenção, esta imagem é um placeholder-->
+                <img src="Imagens/Placeholderwhite.png" alt="" height="30px" id="imgDa"> <!--Atenção, esta imagem é um placeholder-->
+            </a>
+            <div class="men-seq">
+                <div class="menus">
+                    <i class="fa-solid fa-play" onclick="window.location = 'MainPage.html'"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-gear" id="gear"></i>
+                    <div class="sub-menus" id="sub-menu">
+                        <div onclick="changeTheme()">TEMA</div>
+                    </div>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-user" id="user" onclick="user()"></i>
+                </div>
+                <div class="menus">
+                    <i class="fa-solid fa-clipboard" id="user" onclick="window.location = 'Plans.html'"></i>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="background background-white" id="bg">
+        <div class="main-div" id="FormLogin">
+            <div class="image">
+                <img src="Imagens/Pantera.png" alt="">
+            </div>
+            <form action="MainPage.html" method="get" class="form" id="Login" name="Login" onsubmit="" autocomplete="on">
+                <div class="title">
+                    <span>Iniciar Sessão</span>
+                </div>
+                <div class="field" id="f-e">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" onfocus="remError('f-e')" required autocomplete="email">
+                    <span id="msgEm"></span>
+                </div>
+                <div class="field" id="f-s">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" onfocus="remError('f-s')" required autocomplete="current-password">
+                    <span id="msgSen"></span>
+                </div>
+                <div class="LogAct">
+                    <input type="button" value="Entrar" id="btnsubmit" onclick="verificaLogin('email', 'senha')">
+                </div>
+                <div class="filed">
+                    <span>OU</span>
+                </div>
+                <div class="CreateAct">
+                    <input type="button" value="Criar Conta" id="btnsubmit2" onclick="window.location.href='CreatePage.html'">    
+                </div>
+                <a href="RecuperarSenha.html" id="Recover">
+                    <div>
+                        <span>Esqueceu a Senha?</span>
+                    </div>
+                </a>
+            </form>     
+        </div>
+    </div>   
+</body>
+</html>

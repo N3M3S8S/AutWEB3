@@ -1,0 +1,288 @@
+/* Todos os códigos a partir daqui definem o comportamento padrão da página 
+Isto é, quando o seu width for sueperior a 650px*/
+
+body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+; a{text-decoration: none; color: black;};}
+
+.white-theme {
+    .background {
+        background-color: #ffdfea;
+
+        .main-banner {
+            .dados{
+                background-color: #FFC0CB;
+                p {
+                    color: #000000 !important;
+                }
+
+                button {
+                    background-color: #ffdfea;
+                    border: 1px solid #000000;
+                }
+            }
+
+            .sombra-baixo {
+                background-image: linear-gradient(rgba(255,0,0,0), #FFC0CB);
+            }
+
+            .sombra {
+                background-image: linear-gradient(270deg, rgba(255,0,0,0), #FFC0CB);
+            }
+
+            .sombra-1200 {
+                background-image: linear-gradient(360deg, rgba(255,0,0,0), #FFC0CB);
+                display: none;
+            }
+        }
+
+        .cata-seq {
+            span {
+                background-color: #FFC0CB;
+            }
+            
+            .cart-seq, .empty {
+                background-color: #FFC0CB;
+                scrollbar-color: rgb(234, 109, 246) transparent;
+            }
+
+            .cartoon-box {
+                border: 2px hidden rgb(0, 0, 0);
+            }
+        }
+    }
+}
+
+.dark-theme {
+    color: white;
+    .background {
+        background-color: black;
+
+        .main-banner {
+            .dados{
+                background-color: black;
+
+                button {
+                    background-color: #000000;
+                    border: 1px solid violet;
+                    color: white;
+                }
+            }
+
+            .sombra-baixo {
+                background-image: linear-gradient(rgba(255,0,0,0), #000000);
+            }
+
+            .sombra {
+                background-image: linear-gradient(270deg, rgba(255,0,0,0), #000000);
+            }
+
+            .sombra-1200 {
+                background-image: linear-gradient(360deg, rgba(255, 0, 0, 0), #000000);
+                display: none;
+            }
+        }
+
+        .cata-seq {
+            span {
+                background-color: #1d1b1b;
+            }
+            
+            .cart-seq, .empty {
+                background-color: #1d1b1b;
+                scrollbar-color: rgb(234, 109, 246) transparent;
+            }
+
+            .cartoon-box {
+                border: 2px hidden violet;
+            }
+        }
+    }
+}
+
+.background {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    > span {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .main-banner {
+        z-index: 0;
+        background-image: url(Imagens-Especiais/Banner-TJ.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+
+        .dados {
+            height: 100%;
+            width: 45%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 250px;
+            }
+
+            p {
+                width: 50%;
+                text-align: justify;
+                color: white;
+            }
+
+            button {
+                width: 50%;
+                height: 50px;
+                border: 0;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .sombra {
+            height: 100%;
+            width: 20%;
+        }
+
+        .sombra-baixo {
+            position: absolute;
+            bottom: 0;
+            height: 20px;
+            width: 100%;   
+        }
+    }
+
+    .none {
+        .cart-seq {
+            display: none;
+        }
+
+        .empty {
+            display: flex !important;
+            border-radius: 0 10px 10px 10px;
+        }
+    }
+
+    .cata-seq {
+        margin-top: 40px;
+        flex-direction: column;
+        width: 90%;
+
+        span {
+            font-size: 24px;
+        }
+
+        span.titulo {
+            height: 42px;
+            width: 350px;
+            text-align: center;
+            border: solid violet;
+            border-width: 1px 1px 0 1px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .cart-seq {
+            height: 240px;
+            column-gap: 10px;
+            overflow-x: scroll;
+            padding: 10px 5px 0 5px;
+
+            border: 1px solid violet;
+            border-radius: 0 10px 10px 10px;
+        }
+
+        .cartoon-box {
+            border-radius: 10px;
+            height: 200px;
+            min-width: 200px;
+            width: auto;
+            position: relative;
+            transition: all 0.2s;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position: center;
+
+            img {
+                border-radius: inherit;
+                width: 200px;
+                height: auto;
+            }
+        }
+
+        .cartoon-box:hover, .cartoon-box:focus{
+            border-style: solid;
+            transform: scale(1.05);
+        }
+
+        .empty {
+            text-align: center;
+            display: none;
+            width: 100%;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid violet;
+        }
+    }
+}
+
+#md2, #md3 {
+    display: none;
+}
+
+/* A partir deste momento, teremos a presença de "Media Queries", que definem o comportamento da página
+A partir de determinado width. Este width sempre será descrito após "max-width"*/
+
+@media screen and (max-width: 1200px) {
+    .background {
+        .main-banner {
+            flex-direction: column;
+
+            .dados {
+                margin-top: 50px;
+                width: 100%;
+                height: auto;
+
+                P {
+                    width: 80%;
+                }
+            }
+
+            .sombra {
+                display: none;
+            }
+
+            .sombra-1200 {
+                display: flex !important;
+                width: 100%;
+                height: 100px;
+            }
+        }
+    }
+}
+
+/* A partir deste momento do código, serão descritos efeitos relacionados à animações, como
+O transform e o Keyframes, por exemplo*/
+
+@keyframes movimento-vertical {
+    from {transform: translateY(-82px);}
+}
+
+@keyframes girar {
+    to   {transform: rotate(360deg);}
+}
+
+@keyframes movimento-horizontal {
+    from {transform: translateX(-50px);}
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to   {opacity: 1;;}   
+}

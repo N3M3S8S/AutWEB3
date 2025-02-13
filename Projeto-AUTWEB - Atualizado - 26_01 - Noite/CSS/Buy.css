@@ -1,0 +1,160 @@
+body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+a{text-decoration: none; color: black;};}
+
+.white-theme {
+    #imgDa {
+        display: none;
+    }
+
+    #imgLi {
+        display: block;
+    }
+
+    .background {
+        background-color: #ffdfea;
+        
+        .right {
+            background-color: #FFC0CB;
+
+            .seletor {
+                background-color: white;
+            }
+
+            .pixDiv {
+                button {
+                    background-color: #ffdfea;
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+
+.dark-theme {
+    color: white;
+
+    #imgDa {
+        display: block;
+    }
+
+    #imgLi {
+        display: none;
+    }
+
+    .background {
+        background-color: #000000;
+
+        .text-image {
+            > button {
+                background-color: #000000;
+                border-color: violet;
+                color: white;
+            }
+        }
+
+        .right {
+            border: 1px solid violet;
+
+            .seletor {
+                border-color: violet;
+            }
+
+            .pixDiv {
+                button {
+                    background-color: #000000;
+                    border-color: violet;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.background {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .pix {
+        #PIX, .pixDiv {
+            display: flex;
+        }
+
+        #CARD, .cartaoDiv {
+            display: none !important;
+        }
+    }
+
+    .card {
+        #PIX, .pixDiv {
+            display: none !important;
+        }
+
+        #CARD {
+            display: block;
+        } 
+    }
+
+    .right {
+        margin-top: 50px;
+        height: 600px;
+        width: 800px;
+        border-radius: 10px;
+        justify-content: center !important;
+
+        .cartao {
+            width: 100%;
+        }
+
+        .dis {
+            font-size: 12px !important;
+        }
+
+        .pixDiv {
+            flex-direction: column;
+            row-gap: 10px;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+
+            img {
+                height: 250px;
+                border-radius: 10px;
+                display: none;
+            }
+
+            span {
+                font-size: 24px;
+            }
+
+            button {
+                height: 30px;
+                width: 180px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+
+        .seletor {
+            cursor: pointer;
+            position: absolute;
+            align-self: flex-end;
+            height: 50px;
+            width: 50px;
+            border-radius: 5px 5px 0 0;
+            border: 1px solid;
+            font-size: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .right {
+        transform: scale(0.8);
+    }
+}

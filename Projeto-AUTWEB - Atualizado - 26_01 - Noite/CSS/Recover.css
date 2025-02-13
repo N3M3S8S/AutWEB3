@@ -1,0 +1,221 @@
+/* Todos os códigos a partir daqui definem o comportamento padrão da página 
+Isto é, quando o seu width for sueperior a 650px*/
+
+body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+overflow: hidden; a{text-decoration: none; color: black;};}
+
+.white-theme {
+    .background {
+        background-color: #ffdfea;
+    }
+
+    .main-div {
+        background-color: #FFC0CB;
+        border-color: violet;
+
+        .field {
+            input{
+                background-color: rgb(255, 223, 234);
+                border-color: rgb(26, 25, 25);
+            }
+        }
+
+        .LogAct {
+            input {
+                background-color: #fc4964;
+            }
+
+            input:hover {
+                background-color: #ff2244;
+            }
+        }
+
+        .CreateAct {
+            input {
+                background-color: #d13d53d0;
+            }
+
+            input:hover {
+                background-color: #a0293b;
+            }
+        }
+    }
+}
+
+.dark-theme {
+    color: white;
+    .background {
+        background-color: #000000;
+    }
+
+    .main-div {
+        background-color: rgb(14, 13, 13);
+        border-color: violet;
+
+        .field {
+            input{
+                background-color: rgb(0, 0, 0);
+                border-color: violet;
+                color: white;
+            }
+        }
+
+        button {
+            background-color: #000000;
+            border-color: violet;
+            color: white;
+        }
+        
+        button:hover {
+            background-color: #000000;
+            color: white;
+        }
+    }
+
+    a {
+        color: white;
+    }
+}
+
+.background {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    > span {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+#md2, #md3 {
+    display: none;
+}
+
+.main-div {
+    height: 70%;
+    width: 600px;
+    border: 1px solid;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    .title {
+        span {
+            font-size: 2rem;
+            text-align: left;
+            font-weight: 700;
+        }
+    }
+
+    .cd-seq {
+        column-gap: 10px;
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+        }
+    }
+
+    .error {
+        span {
+            display: block !important;
+        };
+    }
+
+    .field {
+        flex-direction: column;
+
+        input {
+            width: 250px;
+            height: 40px;
+            border-style: solid;
+            border-radius: 5px;
+            transition: all 0.2s;
+        }
+
+        span {
+            color: red;
+            margin-top: 2px;
+            font-size: 16px;
+            display: none;
+            text-align: center;
+        }
+    }
+
+    button {
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .cd {
+        input{
+            width: 50px;
+            height: 40px;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+}
+
+.Load {
+    position: absolute;
+    height: 150px;
+
+    img {
+        height: 100px;
+        display: none;
+    }
+}
+
+/* A partir deste momento, teremos a presença de "Media Queries", que definem o comportamento da página
+A partir de determinado width. Este width sempre será descrito após "max-width"*/
+
+@media screen and (max-width: 650px) {
+    .main-div {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-div {
+        width: 450px;
+    }
+}
+
+/* A partir deste momento do código, serão descritos efeitos relacionados à animações, como
+O transform e o Keyframes, por exemplo*/
+
+@keyframes movimento-vertical {
+    from {transform: translateY(-82px);}
+}
+
+@keyframes girar {
+    to   {transform: rotate(360deg);}
+}
+
+@keyframes movimento-horizontal {
+    from {transform: translateX(-50px);}
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to   {opacity: 1;;}   
+}
+
+@keyframes engoleTela {
+    from {transform: scale(0.1);}
+    to   {transform: scale(22);}
+}
