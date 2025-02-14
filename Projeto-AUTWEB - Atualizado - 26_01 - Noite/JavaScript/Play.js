@@ -100,6 +100,10 @@ function comentar() {
     }
 }
 
+function criarPlaylist() {
+    
+}
+
 window.onload = function () {
     carregaEp()
     changeTheme()

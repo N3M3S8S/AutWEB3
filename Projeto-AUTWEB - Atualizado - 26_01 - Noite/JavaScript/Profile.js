@@ -64,6 +64,7 @@ function editaLogin(idNom, idEm, idSen, idAp) {
     conta['senha'] = senha
     localStorage.setItem(encontraConta(id), JSON.stringify(conta))
     recarConta(encontraConta(id))
+    sessionStorage.removeItem('act');
     document.getElementById('EditFor').submit()
 }
 

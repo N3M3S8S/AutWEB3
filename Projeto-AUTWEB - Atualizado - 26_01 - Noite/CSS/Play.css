@@ -98,6 +98,23 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
                 i {
                     font-size: 50px;
                 }
+
+                .playlist {
+                    > div {
+                        display: none;
+                        position: absolute;
+                        border: 1px solid violet;
+                        border-radius: 0 0 5px 5px;
+                        width: 100px;
+                        justify-content: center;
+                    }
+                }
+
+                .playlist:hover {
+                    > div {
+                        display: flex;
+                    }
+                }
             }
 
             .btn.st {
