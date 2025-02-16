@@ -47,8 +47,12 @@ function verificaCamposCriar() {
     }
 
     if(name && apelido && email && senha) {
-        changeDisplay('req', 'final')
+        changeDisplay('req', 'opt')
     }
+}
+
+function verCamposOpt () {
+    changeDisplay('opt', 'final')
 }
 
 window.onload = function () {

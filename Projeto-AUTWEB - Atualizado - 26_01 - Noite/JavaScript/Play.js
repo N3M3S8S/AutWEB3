@@ -100,12 +100,60 @@ function comentar() {
     }
 }
 
-function criarPlaylist() {
-    
+function criarPlaylist(name, abt) {
+    //let name = document.getElementById(idname).value
+    //let abt = document.getElementById(idabt).value
+    if(localStorage.getItem('playlistTable') == null) {
+        let addPlay = JSON.stringify({play1: {nome: name, desc: abt, playID: 1, UserID: id}, count: 1})
+        localStorage.setItem('playlistTable', addPlay)
+    }
+    else {
+        let temp = JSON.parse(localStorage.getItem('playlistTable'))
+        let i = parseInt(temp.count)
+        i++;
+        temp['play' + i] = {nome: name, desc: abt, playID: i, UserID: id}
+        temp['count'] = i
+        localStorage.setItem('playlistTable', JSON.stringify(temp))
+    }
+}
+
+function addPlayItem(playID) {
+    let pItem = localStorage.getItem('playItem')
+
+    if (pItem == null) {
+        let addItem = {count: 1, item1: {desenho: epdata.desenho, episodio: epdata.episodio, fonte: epdata.src, playID: playID, itemID: 1}}
+        localStorage.setItem('playItem', JSON.stringify(addItem))
+    }
+    else {
+        let addItem = JSON.parse(pItem);
+        let i = addItem.count
+        i++
+        addItem['item' + i] = {desenho: epdata.desenho, episodio: epdata.episodio, fonte: epdata.src, playID: playID, itemID: i}
+        addItem['count'] = i;
+        localStorage.setItem('playItem', JSON.stringify(addItem))
+    }
+}
+
+function carregaPlay() {
+    let playlists = JSON.parse(localStorage.getItem('playlistTable'))
+    let j = 1
+    while (j <= playlists.count) {
+        let temp = playlists['play' + j]
+        let mene = document.createElement('div');
+        mene.classList.add('cartoon-box');
+        mene.id = temp.playID;
+        mene.innerHTML = '<span>'+ temp.nome + '</span>'
+        mene.addEventListener("click", function() {
+            addPlayItem(temp.playID);
+        })
+        document.getElementById('lists').appendChild(mene)
+        j++
+    }
 }
 
 window.onload = function () {
     carregaEp()
     changeTheme()
     demonstraCurt()
+    carregaPlay()
 }

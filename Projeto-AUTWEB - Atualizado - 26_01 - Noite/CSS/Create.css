@@ -14,7 +14,7 @@ overflow: hidden; a{text-decoration: none}}
         border-color: violet;
 
         .field {
-            input{
+            input, select{
                 background-color: #ffdfea;
                 border-color: rgb(26, 25, 25);
             }
@@ -53,10 +53,14 @@ overflow: hidden; a{text-decoration: none}}
         border-color: violet;
 
         .field {
-            input{
+            input, select{
                 background-color: #000000;
                 border-color: violet;
                 color: white;
+            }
+
+            .center {
+                color-scheme: dark;
             }
         }
 
@@ -133,7 +137,8 @@ overflow: hidden; a{text-decoration: none}}
     }
 
     .opt, .final {
-        display: none;
+        display: flex;
+        align-items: center;
     }
 
     .title {
@@ -147,12 +152,23 @@ overflow: hidden; a{text-decoration: none}}
     .field {
         flex-direction: column;
 
-        input {
+        input, select {
             width: 250px;
             height: 40px;
             border-style: solid;
             border-radius: 5px;
             transition: all 0.2s;
+            padding: 1px 2px 1px 2px;
+        }
+
+        select {
+            width: 258px;
+        }
+
+        .center {
+            text-align: center;
+            font-size: 24px;
+            border: 2px solid;
         }
 
         span {

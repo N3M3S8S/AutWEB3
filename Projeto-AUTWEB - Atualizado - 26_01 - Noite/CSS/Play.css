@@ -25,6 +25,10 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
                 color: black !important;
             }
         }
+
+        .playliMenu {
+            background-color: #ffdfea;
+        }
     }
 }
 
@@ -44,6 +48,11 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
 
         .play-frame {
             border: 1px solid rgb(255, 0, 174);
+        }
+
+        .playliMenu {
+            background-color: black;
+            border-color: rgb(255, 0, 174);
         }
     }
 }
@@ -97,17 +106,6 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
 
                 i {
                     font-size: 50px;
-                }
-
-                .playlist {
-                    > div {
-                        display: none;
-                        position: absolute;
-                        border: 1px solid violet;
-                        border-radius: 0 0 5px 5px;
-                        width: 100px;
-                        justify-content: center;
-                    }
                 }
 
                 .playlist:hover {
@@ -205,6 +203,28 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
             input:focus {
                 border: 0 !important;
             }
+        }
+    }
+
+    .playliMenu {
+        flex-direction: column;
+        position: fixed;
+        justify-self: center;
+        align-self: center;
+        bottom: 100px;
+        height: 400px;
+        width: 500px;
+        border: 1px solid;
+        border-radius: 5px;
+        align-items: center;
+
+        span {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 90%;
         }
     }
 }

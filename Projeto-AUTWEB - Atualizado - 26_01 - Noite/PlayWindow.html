@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/Play.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/Geral.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/Main.css'>
     <link rel='shortcut icon' type="image" href="Imagens/IconPlaceHolder.png">
     <script src="https://kit.fontawesome.com/236f23f4be.js" crossorigin="anonymous"></script>
     <script src="JavaScript/Geral.js"></script>
@@ -61,10 +62,7 @@
                     <i class="fa-solid fa-share"></i>
                 </div>
                 <div class="btn">
-                    <i class="fa-solid fa-list playlist">
-                        <div>
-                            <i class="fa-solid fa-circle-plus"></i>
-                        </div>
+                    <i class="fa-solid fa-list playlist" onclick="criarPlaylist('Teste', 'Teste')">
                     </i>
                 </div>
                 <div class="btn en" onclick="curtir()" id="heart">
@@ -80,6 +78,20 @@
                 <input type="text" name="" id="inp" placeholder="Quer Comentar algo?">
                 <i class="fa-regular fa-paper-plane" onclick="comentar()"></i>
             </div>
+        </div>
+        <div class="playliMenu">
+            <span>SUAS PLAYLISTS</span>
+            <div class="cata-seq">
+                <div class="empty">
+                    <span>
+                        Você ainda não tem nenhuma plylist criada.
+                    </span>
+                </div>
+                <div class="cart-seq" id="lists">
+                </div>
+            </div>
+            <button>CRIAR NOVA PLAYLIST</button>
+            <button>CANCELAR</button>
         </div>
     </div>
     <!--Atenção: este div é um placeholder e não deve aparecer, mas não pode ser apagado -->

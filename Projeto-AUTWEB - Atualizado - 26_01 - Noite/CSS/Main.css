@@ -212,6 +212,11 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
                 width: 200px;
                 height: auto;
             }
+
+            span { 
+                align-self: flex-end;
+                margin: 0 auto;
+            }
         }
 
         .cartoon-box:hover, .cartoon-box:focus{

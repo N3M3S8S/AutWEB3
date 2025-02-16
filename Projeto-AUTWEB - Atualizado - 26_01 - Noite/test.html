@@ -45,56 +45,36 @@
                 <div class="title">
                     <span>Criar Conta</span>
                 </div>
-                <div class="req" id="req">
-                    <div class="field" id="f-n">
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome" id="nomeUs" onfocus="remError('f-n')" required> 
-                        <span id="msgNa"></span>
-                    </div>
-                    <div class="field" id="f-a">
-                        <label for="apelido">Apelido:</label>
-                        <input type="text" name="apelido" id="apelido" onfocus="remError('f-a')" required>
-                        <span id="msgAp"></span>
-                    </div>
-                    <div class="field" id="f-e">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" onfocus="remError('f-e')" required autocomplete="email">
-                        <span id="msgEm"></span>
-                    </div>
-                    <div class="field" id="f-s">
-                        <label for="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha" onfocus="remError('f-s')" required autocomplete="new-password">
-                        <span id="msgSen"></span>
-                    </div>
-                    <div class="field" id="f-cs">
-                        <label for="Consenha">Confirme a Senha:</label>
-                        <input type="password" name="Consenha" id="Consenha" onfocus="remError('f-cs')" required autocomplete="new-password">
-                        <span id="msgCS"></span>
-                    </div>
-                    <div class="CreateAct">
-                        <input type="button" value="Próximo Passo" id="btnsubmit1" onclick="verificaCamposCriar()">    
-                    </div>
-                </div>
                 <div class="opt" id="opt">
                     <div class="field" id="f-n">
                         <label for="nas">Data de Nascimento:</label>
                         <input class="center" type="date" name="nas" id="nas" onfocus="remError('f-n')" required> 
                         <span id="msgNas"></span>
                     </div>
+                    <div class="field" id="f-n">
+                        <label for="gen">Gênero:</label>
+                        <select class="center" name="gen" id="gen">
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="n" selected>Prefiro não dizer</option>
+                        </select>
+                        <span id="msgGen"></span>
+                    </div>
+                    <div class="field" id="f-n">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" onfocus="remError('f-n')" required> 
+                        <span id="msgCf"></span>
+                    </div>
+                    <div class="CreateAct">
+                        <input type="button" value="Cadastrar Endereço" id="Nadd" onclick="verCamposOpt()">    
+                    </div>
+                    <div class="field" id="f-n">
+                        <label for="tel">Telefone:</label>
+                        <input type="text" name="tel" id="tel" onfocus="remError('f-n')" required> 
+                        <span id="msgCf"></span>
+                    </div>
                     <div class="CreateAct">
                         <input type="button" value="Próximo Passo" id="btnsubmit1" onclick="verCamposOpt()">    
-                    </div>
-                </div>
-                <div class="final" id="final">
-                    <div>
-                        <img src="Imagens/MuchoTexto2.webp" alt="">
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="termos" id="termos" required>
-                        <label for="termos">Li e aceito os <a href="Termos.html">Termos de Uso</a></label>
-                    </div>
-                    <div class="CreateAct">
-                        <input type="button" value="Finalizar Criação" id="btnsubmit2" onclick="criarConta('nomeUs', 'email','senha', 'apelido')">    
                     </div>
                 </div>
                 <div>
