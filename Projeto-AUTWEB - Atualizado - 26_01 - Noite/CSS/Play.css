@@ -249,6 +249,21 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
         button:hover {
             transform: scale(1.05);
         }
+
+        .field {
+            flex-direction: column;
+            width: 90%;
+
+            input {
+                height: 35px;
+                border-radius: 10px;
+            }
+
+            .area {
+                height: 100px;
+                border-radius: 10px;
+            }
+        }
     }
 }
 

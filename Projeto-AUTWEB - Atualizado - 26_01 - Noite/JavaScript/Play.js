@@ -100,9 +100,9 @@ function comentar() {
     }
 }
 
-function criarPlaylist(name, abt) {
-    //let name = document.getElementById(idname).value
-    //let abt = document.getElementById(idabt).value
+function criarPlaylist(idname, idabt) {
+    let name = document.getElementById(idname).value
+    let abt = document.getElementById(idabt).value
     if(localStorage.getItem('playlistTable') == null) {
         let addPlay = JSON.stringify({play1: {nome: name, desc: abt, playID: 1, UserID: id}, count: 1})
         localStorage.setItem('playlistTable', addPlay)
@@ -115,6 +115,7 @@ function criarPlaylist(name, abt) {
         temp['count'] = i
         localStorage.setItem('playlistTable', JSON.stringify(temp))
     }
+    OeCWin('creaPl')
     carregaPlay()
 }
 

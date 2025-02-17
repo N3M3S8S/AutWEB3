@@ -90,8 +90,27 @@
                 <div class="cart-seq" id="lists">
                 </div>
             </div>
-            <button onclick="criarPlaylist('Tes3', 'test2')">CRIAR NOVA PLAYLIST</button>
+            <button onclick="OeCWin('creaPl')">CRIAR NOVA PLAYLIST</button>
             <button onclick="OeCWin('plWin')">FECHAR</button>
+        </div>
+        <div class="playliMenu" id="creaPl">
+            <div class="field">
+                <label for="nomeP">Nome:</label>
+                <input type="text" name="nomeP" id="namePl">
+            </div>
+            <div class="field">
+                <label for="descP">Descricao:</label>
+                <textarea class="area" name="descP" id="abtPl"></textarea>
+            </div>
+            <div class="field">
+                <label for="pub">Privacidade</label>
+                <select name="pub" id="pubPl">
+                    <option value="">Público</option>
+                    <option value="">Privado</option>
+                </select>
+            </div>
+            <button onclick="criarPlaylist('namePl', 'abtPl')">CONFIRMAR</button>
+            <button onclick="OeCWin('creaPl')">CANCELAR</button>
         </div>
     </div>
     <!--Atenção: este div é um placeholder e não deve aparecer, mas não pode ser apagado -->
