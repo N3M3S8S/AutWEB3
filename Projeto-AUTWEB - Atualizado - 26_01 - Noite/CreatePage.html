@@ -81,6 +81,28 @@
                         <input class="center" type="date" name="nas" id="nas" onfocus="remError('f-n')" required> 
                         <span id="msgNas"></span>
                     </div>
+                    <div class="field" id="f-n">
+                        <label for="gen">Gênero:</label>
+                        <select class="center" name="gen" id="gen">
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="n" selected>Prefiro não dizer</option>
+                        </select>
+                        <span id="msgGen"></span>
+                    </div>
+                    <div class="field" id="f-n">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" onfocus="remError('f-n')" required> 
+                        <span id="msgCf"></span>
+                    </div>
+                    <div class="CreateAct">
+                        <input type="button" value="Cadastrar Endereço" id="Nadd" onclick="verCamposOpt()">    
+                    </div>
+                    <div class="field" id="f-n">
+                        <label for="tel">Telefone:</label>
+                        <input type="text" name="tel" id="tel" onfocus="remError('f-n')" required> 
+                        <span id="msgCf"></span>
+                    </div>
                     <div class="CreateAct">
                         <input type="button" value="Próximo Passo" id="btnsubmit1" onclick="verCamposOpt()">    
                     </div>
