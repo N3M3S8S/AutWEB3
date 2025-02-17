@@ -216,6 +216,12 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
             span { 
                 align-self: flex-end;
                 margin: 0 auto;
+                background-color: rgb(0, 0, 0);
+                height: 50px;
+                width: 100%;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 0 0 9px 9px;
             }
         }
 

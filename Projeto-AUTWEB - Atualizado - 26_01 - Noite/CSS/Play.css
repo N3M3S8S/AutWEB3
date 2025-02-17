@@ -28,6 +28,14 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
 
         .playliMenu {
             background-color: #ffdfea;
+
+            .cata-seq {
+                color: white;
+            }
+
+            button {
+                background-color: #ffdfea;
+            }
         }
     }
 }
@@ -53,6 +61,12 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
         .playliMenu {
             background-color: black;
             border-color: rgb(255, 0, 174);
+
+            button {
+                background-color: black;
+                border-color: violet;
+                color: white;
+            }
         }
     }
 }
@@ -207,12 +221,13 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
     }
 
     .playliMenu {
+        display: none;
         flex-direction: column;
         position: fixed;
         justify-self: center;
         align-self: center;
         bottom: 100px;
-        height: 400px;
+        height: 425px;
         width: 500px;
         border: 1px solid;
         border-radius: 5px;
@@ -225,6 +240,14 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
         button {
             margin-top: 10px;
             width: 90%;
+            height: 35px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
         }
     }
 }

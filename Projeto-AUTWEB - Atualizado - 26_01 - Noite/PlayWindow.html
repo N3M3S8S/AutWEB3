@@ -62,7 +62,7 @@
                     <i class="fa-solid fa-share"></i>
                 </div>
                 <div class="btn">
-                    <i class="fa-solid fa-list playlist" onclick="criarPlaylist('Teste', 'Teste')">
+                    <i class="fa-solid fa-list playlist" onclick="OeCWin('plWin')">
                     </i>
                 </div>
                 <div class="btn en" onclick="curtir()" id="heart">
@@ -79,7 +79,7 @@
                 <i class="fa-regular fa-paper-plane" onclick="comentar()"></i>
             </div>
         </div>
-        <div class="playliMenu">
+        <div class="playliMenu" id="plWin">
             <span>SUAS PLAYLISTS</span>
             <div class="cata-seq">
                 <div class="empty">
@@ -90,8 +90,8 @@
                 <div class="cart-seq" id="lists">
                 </div>
             </div>
-            <button>CRIAR NOVA PLAYLIST</button>
-            <button>CANCELAR</button>
+            <button onclick="criarPlaylist('Tes3', 'test2')">CRIAR NOVA PLAYLIST</button>
+            <button onclick="OeCWin('plWin')">FECHAR</button>
         </div>
     </div>
     <!--Atenção: este div é um placeholder e não deve aparecer, mas não pode ser apagado -->

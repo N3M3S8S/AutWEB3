@@ -231,6 +231,13 @@ function loadCurt() {
     }
 }
 
+function getRandomRgbColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 function fadein(id) {
     document.getElementById(id).style.display = "flex";
     document.getElementById(id).style.animation = "fade-in 0.5s linear";

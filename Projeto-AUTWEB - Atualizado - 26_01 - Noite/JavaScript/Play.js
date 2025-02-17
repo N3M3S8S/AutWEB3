@@ -115,6 +115,7 @@ function criarPlaylist(name, abt) {
         temp['count'] = i
         localStorage.setItem('playlistTable', JSON.stringify(temp))
     }
+    carregaPlay()
 }
 
 function addPlayItem(playID) {
@@ -135,21 +136,37 @@ function addPlayItem(playID) {
 }
 
 function carregaPlay() {
+    document.getElementById('lists').innerHTML = '';
     let playlists = JSON.parse(localStorage.getItem('playlistTable'))
     let j = 1
     while (j <= playlists.count) {
         let temp = playlists['play' + j]
-        let mene = document.createElement('div');
-        mene.classList.add('cartoon-box');
-        mene.id = temp.playID;
-        mene.innerHTML = '<span>'+ temp.nome + '</span>'
-        mene.addEventListener("click", function() {
-            addPlayItem(temp.playID);
-        })
-        document.getElementById('lists').appendChild(mene)
+        if (temp.UserID == id) {
+            let mene = document.createElement('div');
+            mene.classList.add('cartoon-box');
+            mene.id = temp.playID;
+            mene.innerHTML = '<span>'+ temp.nome + '</span>'
+            mene.style.backgroundColor = getRandomRgbColor()
+            mene.addEventListener("click", function() {
+                addPlayItem(temp.playID);
+            })
+            document.getElementById('lists').appendChild(mene)
+        }
         j++
     }
 }
+
+function OeCWin (id) {
+    let win = document.getElementById(id)
+    
+    if (win.style.display == "flex") {
+        win.style.display = "none"
+        console.log('teste')
+    }
+    else {
+        win.style.display = "flex"
+    }
+}   
 
 window.onload = function () {
     carregaEp()
