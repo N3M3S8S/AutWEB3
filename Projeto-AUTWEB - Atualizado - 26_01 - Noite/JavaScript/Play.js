@@ -134,6 +134,7 @@ function addPlayItem(playID) {
         addItem['count'] = i;
         localStorage.setItem('playItem', JSON.stringify(addItem))
     }
+    OeCWin('plWin')
 }
 
 function carregaPlay() {

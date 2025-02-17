@@ -68,6 +68,44 @@ function editaLogin(idNom, idEm, idSen, idAp) {
     document.getElementById('EditFor').submit()
 }
 
+function criarListaPlay(id) {
+    let items = JSON.parse(localStorage.getItem('playItem'))
+    let newLista = {count: 1}
+
+    let i = 1
+    while (i <= items.count) {
+        let temp = items['item' + i]
+        if (temp['playID'] == id) {
+            newLista['ca' + i] = {desenho: temp.desenho, episodio: temp.episodio, fonte: temp.fonte}
+            newLista['count'] = i
+            sessionStorage.setItem('newLista', JSON.stringify(newLista))
+        }
+        i++
+    }
+    console.log(newLista)
+}
+
+function carregaPlayOnly() {
+    document.getElementById('Plays').innerHTML = '';
+    let playlists = JSON.parse(localStorage.getItem('playlistTable'))
+    let j = 1
+    while (j <= playlists.count) {
+        let temp = playlists['play' + j]
+        if (temp.UserID == id) {
+            let mene = document.createElement('div');
+            mene.classList.add('cartoon-box');
+            mene.id = temp.playID;
+            mene.innerHTML = '<span>'+ temp.nome + '</span>'
+            mene.style.backgroundColor = getRandomRgbColor()
+            mene.addEventListener("click", function() {
+                criarListaPlay(temp.playID);
+            })
+            document.getElementById('Plays').appendChild(mene)
+        }
+        j++
+    }
+}
+
 function sair() {
     sessionStorage.removeItem('act');
     window.location = 'LoginPage.html'
@@ -76,5 +114,5 @@ function sair() {
 window.onload = function () {
     changeTheme();
     loadData();
-    loadCurt();
+    carregaPlayOnly()
 }
