@@ -156,18 +156,6 @@ function carregaPlay() {
         }
         j++
     }
-}
-
-function OeCWin (id) {
-    let win = document.getElementById(id)
-    
-    if (win.style.display == "flex") {
-        win.style.display = "none"
-        console.log('teste')
-    }
-    else {
-        win.style.display = "flex"
-    }
 }   
 
 window.onload = function () {

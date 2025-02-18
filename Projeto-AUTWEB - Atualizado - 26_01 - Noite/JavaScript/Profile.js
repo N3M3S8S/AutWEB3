@@ -85,6 +85,23 @@ function criarListaPlay(id) {
     console.log(newLista)
 }
 
+function carregaLista() {
+    let corpo = document.getElementById('boby')
+    let lista = JSON.parse(sessionStorage.getItem('newLista'))
+    let j = 1
+    console.log(lista.count)
+
+    while (j <= lista.count) {
+        let item = lista['ca' + j]
+        let newRow = document.createElement('tr')
+        newRow.innerHTML = "<td>Img</td> <td class = 'mene' ><span>" + item.desenho + "</span><span>" + item.episodio + "</span></td><td>Play</td>"
+        corpo.appendChild(newRow)
+        j++
+        console.log('newRow')
+    }
+    OeCWin('FAZOL')
+}
+
 function carregaPlayOnly() {
     document.getElementById('Plays').innerHTML = '';
     let playlists = JSON.parse(localStorage.getItem('playlistTable'))
@@ -99,6 +116,7 @@ function carregaPlayOnly() {
             mene.style.backgroundColor = getRandomRgbColor()
             mene.addEventListener("click", function() {
                 criarListaPlay(temp.playID);
+                carregaLista()
             })
             document.getElementById('Plays').appendChild(mene)
         }

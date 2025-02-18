@@ -238,6 +238,18 @@ function getRandomRgbColor() {
     return `rgb(${r}, ${g}, ${b})`;
 }
 
+function OeCWin (id) {
+    let win = document.getElementById(id)
+    
+    if (win.style.display == "flex") {
+        win.style.display = "none"
+        console.log('teste')
+    }
+    else {
+        win.style.display = "flex"
+    }
+}
+
 function fadein(id) {
     document.getElementById(id).style.display = "flex";
     document.getElementById(id).style.animation = "fade-in 0.5s linear";
