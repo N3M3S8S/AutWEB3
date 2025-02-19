@@ -90,6 +90,7 @@ function carregaLista() {
     let lista = JSON.parse(sessionStorage.getItem('newLista'))
     let j = 1
     console.log(lista.count)
+    corpo.innerHTML = ''
 
     while (j <= lista.count) {
         let item = lista['ca' + j]

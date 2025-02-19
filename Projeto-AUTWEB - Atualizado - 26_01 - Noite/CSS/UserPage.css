@@ -212,19 +212,27 @@ overflow: hidden; a{text-decoration: none}}
 
         table {
             width: 90%;
-            
+            display: table-row;
 
-            table tr:nth-child(even) {
-                background-color: #f2f2f2; /* Cor para linhas pares */
-            }
-            
-            table tr:nth-child(odd) {
-                background-color: #ffffff; /* Cor para linhas ímpares */
-            }
+            tbody {
+                width: 100%;
 
-            .mene {
-                display: flex;
-                flex-direction: column;
+                table tr:nth-child(even) {
+                    background-color: #f2f2f2; /* Cor para linhas pares */
+                }
+                
+                table tr:nth-child(odd) {
+                    background-color: #ffffff; /* Cor para linhas ímpares */
+                }
+
+                tr {
+                    border: 1px solid violet;
+                }
+
+                .mene {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
 
