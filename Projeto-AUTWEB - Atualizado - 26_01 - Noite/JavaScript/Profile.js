@@ -93,11 +93,13 @@ function carregaLista() {
 
     while (j <= lista.count) {
         let item = lista['ca' + j]
-        let newRow = document.createElement('tr')
-        newRow.innerHTML = "<td>Img</td> <td class = 'mene' ><span>" + item.desenho + "</span><span>" + item.episodio + "</span></td><td>Play</td>"
-        corpo.appendChild(newRow)
+        if (item != null) {
+            let newRow = document.createElement('tr')
+            newRow.innerHTML = "<td>Img</td> <td class = 'mene' ><span>" + item.desenho + "</span><span>" + item.episodio + "</span></td><td>Play</td>"
+            corpo.appendChild(newRow)
+            console.log('newRow')
+        }
         j++
-        console.log('newRow')
     }
     OeCWin('FAZOL')
 }

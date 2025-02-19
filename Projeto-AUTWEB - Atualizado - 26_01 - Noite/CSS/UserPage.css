@@ -212,6 +212,15 @@ overflow: hidden; a{text-decoration: none}}
 
         table {
             width: 90%;
+            
+
+            table tr:nth-child(even) {
+                background-color: #f2f2f2; /* Cor para linhas pares */
+            }
+            
+            table tr:nth-child(odd) {
+                background-color: #ffffff; /* Cor para linhas ímpares */
+            }
 
             .mene {
                 display: flex;
