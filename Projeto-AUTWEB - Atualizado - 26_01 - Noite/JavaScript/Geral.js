@@ -250,6 +250,41 @@ function OeCWin (id) {
     }
 }
 
+function playEp(fonte, des, ep) {
+    var epdata = {src: fonte, desenho: des, episodio: ep}
+    var data = JSON.stringify(epdata)
+    sessionStorage.setItem('ep', data);
+    addLastWatch(data)
+    window.location = 'PlayWindow.html'
+}
+
+function addLastWatch(epd) {
+    if (sessionStorage.getItem('LastWatch') == null) {
+        sessionStorage.setItem('LastWatch', '0')
+    }
+    var counter = 0
+    var counterLast = sessionStorage.getItem('LastWatch')
+    var add = true
+
+    while (counter <= counterLast) {
+        if (epd == sessionStorage.getItem('dr' + counter)) {
+            add = add && false
+        }
+        else {
+            add = add && true
+        }
+        counter++
+    }
+
+    if (add == true) {
+        var temp = parseInt(counterLast)
+        temp++;
+        counterLast = temp.toString();
+        sessionStorage.setItem('LastWatch', counterLast)
+        sessionStorage.setItem('dr' + counterLast, epd)
+    }
+}
+
 function fadein(id) {
     document.getElementById(id).style.display = "flex";
     document.getElementById(id).style.animation = "fade-in 0.5s linear";

@@ -68,9 +68,9 @@ function editaLogin(idNom, idEm, idSen, idAp) {
     document.getElementById('EditFor').submit()
 }
 
-function criarListaPlay(id) {
+function criarListaPlay(id, na, des) {
     let items = JSON.parse(localStorage.getItem('playItem'))
-    let newLista = {count: 1}
+    let newLista = {count: 1, playname: na, desc: des}
 
     let i = 1
     while (i <= items.count) {
@@ -83,26 +83,6 @@ function criarListaPlay(id) {
         i++
     }
     console.log(newLista)
-}
-
-function carregaLista() {
-    let corpo = document.getElementById('boby')
-    let lista = JSON.parse(sessionStorage.getItem('newLista'))
-    let j = 1
-    console.log(lista.count)
-    corpo.innerHTML = ''
-
-    while (j <= lista.count) {
-        let item = lista['ca' + j]
-        if (item != null) {
-            let newRow = document.createElement('tr')
-            newRow.innerHTML = "<td>Img</td> <td class = 'mene' ><span>" + item.desenho + "</span><span>" + item.episodio + "</span></td><td>Play</td>"
-            corpo.appendChild(newRow)
-            console.log('newRow')
-        }
-        j++
-    }
-    OeCWin('FAZOL')
 }
 
 function carregaPlayOnly() {
@@ -118,8 +98,8 @@ function carregaPlayOnly() {
             mene.innerHTML = '<span>'+ temp.nome + '</span>'
             mene.style.backgroundColor = getRandomRgbColor()
             mene.addEventListener("click", function() {
-                criarListaPlay(temp.playID);
-                carregaLista()
+                criarListaPlay(temp.playID, temp.nome, temp.desc);
+                window.location = 'PlaylistPage.html'
             })
             document.getElementById('Plays').appendChild(mene)
         }
