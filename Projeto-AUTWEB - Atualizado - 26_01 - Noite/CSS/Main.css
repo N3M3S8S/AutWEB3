@@ -47,6 +47,10 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
 
             .cartoon-box {
                 border: 2px hidden rgb(0, 0, 0);
+
+                span {
+                    color: white;
+                }
             }
         }
     }

@@ -11,7 +11,7 @@ function carregaLista() {
         let item = lista['ca' + j]
         if (item != null) {
             let newRow = document.createElement('tr')
-            newRow.innerHTML = "<td>Img</td> <td class = 'desEp' ><span>" + item.desenho + "</span><span>" + item.episodio + "</span></td><td id='"+ j +"'>Play</td>"
+            newRow.innerHTML = "<td><img src = Imagens/totally_spies.jpeg></img></td> <td class = 'desEp' ><span>" + item.desenho + "</span><span>" + item.episodio + "</span></td><td id='"+ j +"'><i class='fa-solid fa-play'</i></td>"
             corpo.appendChild(newRow)
             document.getElementById(j).addEventListener("click", function() {
                 playEp(item.fonte, item.desenho, item.episodio);
@@ -22,7 +22,12 @@ function carregaLista() {
     }
 }
 
+function carregaBanner () {
+    document.getElementById('banner').src = 'Imagens/totally_spies.jpeg'
+}
+
 window.onload = function () {
     changeTheme();
     carregaLista()
+    carregaBanner()
 }

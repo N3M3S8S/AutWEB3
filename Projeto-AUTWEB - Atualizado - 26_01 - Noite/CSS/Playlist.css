@@ -36,6 +36,14 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
             }
         }
     }
+
+    table tr:nth-child(even) {
+        background-color: #fdc1e369; /* Cor para linhas pares */
+    }
+    
+    table tr:nth-child(odd) {
+        background-color: #f9b7fb; /* Cor para linhas ímpares */
+    }
 }
 
 .dark-theme {
@@ -83,6 +91,14 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
             }
         }
     }
+
+    table tr:nth-child(even) {
+        background-color: #0c090969; /* Cor para linhas pares */
+    }
+    
+    table tr:nth-child(odd) {
+        background-color: #420044; /* Cor para linhas ímpares */
+    }
 }
 
 .background {
@@ -94,15 +110,30 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
         height: 100vh;
         width: 400px;
         flex-direction: column;
+        background: linear-gradient(#FFC0CB 10%, rgba(255, 255, 255, 0) 90%);
+        padding: 10px;
+        border-radius: 10px;
 
         .firstcar {
             width: 300px;
             height: 300px;
             border: 1px solid violet;
+            align-self: center;
         }
 
         span {
             margin-top: 10px;
+            font-size: 30px;
+            font-weight: 500px;
+        }
+
+        p {
+            width: 400px;
+        }
+
+        #banner {
+            height: 300px;
+            width: 300px;
         }
     }
 
@@ -118,19 +149,24 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
             text-align: center;
             border-bottom: 1px solid violet;
             background-color: #000000 !important;
+            font-size: 28px;
         }
-        
+
         .desEp {
             display: flex;
             flex-direction: column;
         }
-    }
 
-    table tr:nth-child(even) {
-        background-color: #1f1d1d69; /* Cor para linhas pares */
-    }
-    
-    table tr:nth-child(odd) {
-        background-color: #110101; /* Cor para linhas ímpares */
+        i {
+            font-size: 29px;
+            width: 16px;
+            cursor: pointer;
+        }
+
+        img {
+            height: 36px;
+            align-self: center;
+            justify-self: center;
+        }
     }
 }

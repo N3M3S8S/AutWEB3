@@ -27,10 +27,14 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
         }
 
         .playliMenu {
-            background-color: #ffdfea;
+            background-color: #FFC0CB;
 
             .cata-seq {
                 color: white;
+            }
+
+            input, textarea, select {
+                background-color: #ffdfea;
             }
 
             button {
@@ -61,6 +65,18 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
         .playliMenu {
             background-color: black;
             border-color: rgb(255, 0, 174);
+
+            button {
+                background-color: black;
+                border-color: violet;
+                color: white;
+            }
+
+            input, textarea, select {
+                background-color: black;
+                border-color: violet;
+                color: white;
+            }
 
             button {
                 background-color: black;
@@ -232,6 +248,7 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
         border: 1px solid;
         border-radius: 5px;
         align-items: center;
+        text-align: center;
 
         span {
             margin-top: 10px;
@@ -262,6 +279,11 @@ a{text-decoration: none; color: black;}; #ph {display: none;}}
             .area {
                 height: 100px;
                 border-radius: 10px;
+            }
+
+            select {
+                height: 35px;
+                font-size: 24px
             }
         }
     }
