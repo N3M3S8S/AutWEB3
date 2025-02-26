@@ -68,23 +68,6 @@ function editaLogin(idNom, idEm, idSen, idAp) {
     document.getElementById('EditFor').submit()
 }
 
-function criarListaPlay(id, na, des) {
-    let items = JSON.parse(localStorage.getItem('playItem'))
-    let newLista = {count: 1, playname: na, desc: des, id: id}
-
-    let i = 1
-    while (i <= items.count) {
-        let temp = items['item' + i]
-        if (temp['playID'] == id) {
-            newLista['ca' + i] = {desenho: temp.desenho, episodio: temp.episodio, fonte: temp.fonte}
-            newLista['count'] = i
-            sessionStorage.setItem('newLista', JSON.stringify(newLista))
-        }
-        i++
-    }
-    console.log(newLista)
-}
-
 function carregaPlayOnly() {
     document.getElementById('Plays').innerHTML = '';
     let playlists = JSON.parse(localStorage.getItem('playlistTable'))

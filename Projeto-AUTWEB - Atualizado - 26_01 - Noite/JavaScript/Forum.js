@@ -21,9 +21,34 @@ function busca() {
             nUs.classList.add('user')
             nUs.innerHTML = '<img src="Imagens/PFP_Holder.jpg" alt=""><span>' + ap +'</span>'
             nUs.addEventListener('click', function() {
-                loaduser(ap)
+                buscaPlayOnly(conta.id);
+                loaduser(ap);
             })
             document.getElementById('resu').appendChild(nUs)
+        }
+        j++
+    }
+}
+
+function buscaPlayOnly(ida) {
+    document.getElementById('Plays').innerHTML = '';
+    let playlists = JSON.parse(localStorage.getItem('playlistTable'))
+    let j = 1
+    while (j <= playlists.count) {
+        let temp = playlists['play' + j]
+        if (playlists['play' + j] != null) {
+            if (temp.UserID == ida) {
+                let mene = document.createElement('div');
+                mene.classList.add('cartoon-box');
+                mene.id = temp.playID;
+                mene.innerHTML = '<span>'+ temp.nome + '</span>'
+                mene.style.backgroundColor = getRandomRgbColor()
+                mene.addEventListener("click", function() {
+                    criarListaPlay(temp.playID, temp.nome, temp.desc, 'no');
+                    window.location = 'PlaylistPage.html'
+                })
+                document.getElementById('Plays').appendChild(mene)
+            }
         }
         j++
     }

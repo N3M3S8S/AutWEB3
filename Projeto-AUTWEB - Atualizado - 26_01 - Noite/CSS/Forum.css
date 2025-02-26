@@ -90,8 +90,31 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
             transition: all 0.5s;
         }
 
+        .cata-seq {
+            margin: 0;
+
+            span.titulo {
+                height: 30px;
+                width: 150px;
+                font-size: 20px;
+            }
+        }
+
         .cart-seq {
             height: 100px !important;
+
+            .cartoon-box {
+                height: 80px;
+                min-width: 80px;
+
+                span { 
+                    height: 20px;
+                    width: 200px;
+                    line-height: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
         }
     }
 
