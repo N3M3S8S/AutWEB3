@@ -2,7 +2,7 @@
 
 input:focus {
     transform: scale(1.03);
-    
+    transition: all 2s; 
 }
 
 .white-theme {
@@ -181,6 +181,36 @@ input:focus {
     .shadow {
         height: 10px;
         width: 100%;
+    }
+
+    .search {
+        input {
+            width: 300px;
+            height: 35px;
+            border-radius: 10px;
+        }
+
+        .model {
+            position: absolute;
+            top: 50px;
+            flex-direction: column;
+            row-gap: 10px;
+
+            .user {
+                width: 300px;
+                background-color: black;
+                border-radius: 10px;
+                border: 1px solid violet;
+                align-items: center;
+                column-gap: 10px;
+                cursor: pointer;
+
+                img {
+                    height: 30px;
+                    border-radius: 50%;
+                }
+            }
+        }
     }
 }
 

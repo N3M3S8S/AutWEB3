@@ -51,6 +51,8 @@ function verificaCamposCriar() {
     }
 }
 
+
+
 function verCamposOpt () {
     changeDisplay('opt', 'final')
 }

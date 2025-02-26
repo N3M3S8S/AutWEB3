@@ -76,12 +76,12 @@
                     </div>
                 </div>
                 <div class="opt" id="opt">
-                    <div class="field" id="f-n">
+                    <div class="field" id="f-nas">
                         <label for="nas">Data de Nascimento:</label>
-                        <input class="center" type="date" name="nas" id="nas" onfocus="remError('f-n')" required> 
+                        <input class="center" type="date" name="nas" id="nas" onfocus="remError('f-nas')" required> 
                         <span id="msgNas"></span>
                     </div>
-                    <div class="field" id="f-n">
+                    <div class="field" id="f-gen">
                         <label for="gen">Gênero:</label>
                         <select class="center" name="gen" id="gen">
                             <option value="m">Masculino</option>
@@ -90,9 +90,9 @@
                         </select>
                         <span id="msgGen"></span>
                     </div>
-                    <div class="field" id="f-n">
+                    <div class="field" id="f-cp">
                         <label for="cpf">CPF:</label>
-                        <input type="text" name="cpf" id="cpf" onfocus="remError('f-n')" required> 
+                        <input type="number" name="cpf" id="cpf" onfocus="remError('f-cp')" required> 
                         <span id="msgCf"></span>
                     </div>
                     <div class="CreateAct">
@@ -102,34 +102,34 @@
                             <div class="title">
                                 <span>ENDEREÇO</span>
                             </div>
-                            <div class="field" id="f-n">
-                                <label for="tel">Logradouro:</label>
-                                <input type="text" name="tel" id="tel" onfocus="remError('f-n')" required> 
+                            <div class="field" id="f-l">
+                                <label for="Log">Logradouro:</label>
+                                <input type="text" name="Log" id="log" onfocus="remError('f-l')" required> 
                                 <span id="msgCf"></span>
                             </div>
-                            <div class="field" id="f-n">
-                                <label for="tel">Número:</label>
-                                <input type="text" name="tel" id="tel" onfocus="remError('f-n')" required> 
+                            <div class="field" id="f-en">
+                                <label for="enum">Número:</label>
+                                <input type="number" name="enum" id="enum" onfocus="remError('f-en')" required> 
                                 <span id="msgCf"></span>
                             </div>
-                            <div class="field" id="f-n">
-                                <label for="tel">CEP:</label>
-                                <input type="text" name="tel" id="tel" onfocus="remError('f-n')" required> 
+                            <div class="field" id="f-ce">
+                                <label for="cep">CEP:</label>
+                                <input type="number" name="cep" id="cep" onfocus="remError('f-ce')" required> 
                                 <span id="msgCf"></span>
                             </div>
-                            <div class="field" id="f-n">
+                            <div class="field" id="f-ba">
                                 <label for="tel">BAIRRO:</label>
-                                <input type="text" name="tel" id="tel" onfocus="remError('f-n')" required> 
+                                <input type="text" name="bai" id="bai" onfocus="remError('f-ba')" required> 
+                                <span id="msgCf"></span>
+                            </div>
+                            <div class="field" id="f-ci">
+                                <label for="cid">CIDADE:</label>
+                                <input type="text" name="cid" id="cid" onfocus="remError('f-ci')" required> 
                                 <span id="msgCf"></span>
                             </div>
                             <div class="field" id="f-n">
-                                <label for="tel">CIDADE:</label>
-                                <input type="text" name="tel" id="tel" onfocus="remError('f-n')" required> 
-                                <span id="msgCf"></span>
-                            </div>
-                            <div class="field" id="f-n">
-                                <label for="gen">ESTADO:</label>
-                                <select class="center" name="gen" id="gen">
+                                <label for="est">ESTADO:</label>
+                                <select class="center" name="est" id="est">
                                     <option value="">Selecione</option>
                                     <option value="AC">AC</option>
                                     <option value="AL">AL</option>
@@ -165,9 +165,9 @@
                                 <input type="button" value="CONFIRMAR" id="Nadd" onclick="OeCWin('ende')">    
                             </div>
                         </div>
-                    <div class="field" id="f-n">
+                    <div class="field" id="f-te">
                         <label for="tel">Telefone:</label>
-                        <input type="text" name="tel" id="tel" onfocus="remError('f-n')" required> 
+                        <input type="number" name="tel" id="tel" onfocus="remError('f-te')" required> 
                         <span id="msgCf"></span>
                     </div>
                     <div class="CreateAct">
