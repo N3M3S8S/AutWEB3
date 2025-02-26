@@ -64,16 +64,6 @@ overflow: hidden; a{text-decoration: none}}
             }
         }
 
-        .LogAct {
-            input {
-                background-color: #fc4964;
-            }
-
-            input:hover {
-                background-color: #ff2244;
-            }
-        }
-
         .CreateAct {
             input {
                 background-color: black;

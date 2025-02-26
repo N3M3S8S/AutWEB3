@@ -6,6 +6,16 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
             background-color: #FFC0CB;
         }
     }
+
+    .prf {
+        button {
+            background-color: #fc4964;
+        }
+
+        button:hover {
+            background-color: #ff2244;
+        }
+    }
 }
 
 .dark-theme {
@@ -31,6 +41,14 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
                 }
             }
         }
+
+        .prf {
+            button {
+                background-color: black;
+                border-color: violet;
+                color: white;
+            }
+        }
     }
 }
 
@@ -38,6 +56,44 @@ body {margin: 0; div, form {display: flex; font-family: system-ui, -apple-system
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    .prf {
+        top: 150px;
+        position: fixed;
+        background-color: black;
+        border: 1px solid violet;
+        height: 500px;
+        width: 300px;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+
+        .mene {
+            width: 260px;
+            flex-direction: column;
+
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        button {
+            width: 258px;
+            height: 38px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        .cart-seq {
+            height: 100px !important;
+        }
+    }
 
     .blog {
         height: calc(100vh);

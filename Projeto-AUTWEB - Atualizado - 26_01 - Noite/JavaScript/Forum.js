@@ -9,21 +9,29 @@ function changePostsOfc() {
 }
 
 function busca() {
-    let se = document.getElementById('sear').value;
+    let se = document.getElementById('sear').value.toLowerCase();
     let j = 1
     document.getElementById('resu').innerHTML = ""
 
     while (j <= QntContas) {
         let conta = JSON.parse(localStorage.getItem('conta' + j))
-        let ap = conta.apelido.toString()
-        if (ap.includes(se) == true && se != "") {
+        let ap = conta.apelido
+        if (ap.toLowerCase().includes(se) == true && se != "" && conta.id != id) {
             let nUs = document.createElement('div')
             nUs.classList.add('user')
             nUs.innerHTML = '<img src="Imagens/PFP_Holder.jpg" alt=""><span>' + ap +'</span>'
+            nUs.addEventListener('click', function() {
+                loaduser(ap)
+            })
             document.getElementById('resu').appendChild(nUs)
         }
         j++
     }
+}
+
+function loaduser(ape) {
+    document.getElementById('ape').innerHTML = ape;
+    OeCWin('prf')
 }
 
 window.onload = function( ) {

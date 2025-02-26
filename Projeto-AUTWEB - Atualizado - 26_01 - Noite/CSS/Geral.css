@@ -2,7 +2,7 @@
 
 input:focus {
     transform: scale(1.03);
-    transition: all 2s; 
+    transition: all 0.5s; 
 }
 
 .white-theme {
@@ -195,6 +195,11 @@ input:focus {
             top: 50px;
             flex-direction: column;
             row-gap: 10px;
+            background-color: black;
+            width: 310px;
+            align-items: center;
+            border-radius: 0 0 10px 10px;
+            border: 1px solid violet;
 
             .user {
                 width: 300px;
@@ -209,6 +214,10 @@ input:focus {
                     height: 30px;
                     border-radius: 50%;
                 }
+            }
+
+            .user:hover {
+                transform: scale(1.02);
             }
         }
     }
