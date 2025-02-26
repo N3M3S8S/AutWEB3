@@ -46,6 +46,9 @@
             </div>
             <span id="plNa">Titulo Playlist</span>
             <p id="plDe">descrição da playlist</p>
+            <div class="config" onclick="OeCWin('creaPl')">
+                <i class="fa-solid fa-pencil"></i>
+            </div>
         </div>
         <table>
             <tbody id="boby">
@@ -54,6 +57,33 @@
                 </tr>
             </tbody>
         </table>
+        <div class="playliMenu" id="creaPl">
+            <div class="field">
+                <label for="nomeP">Nome:</label>
+                <div>
+                    <input type="text" name="nomeP" id="namePl">
+                    <button onclick="magica()" i><i class="fa-solid fa-upload"></i></button>
+                    <input id="sorry" type="file" src="" alt="" style="display: none;">
+                </div>
+            </div>
+            <div class="field">
+                <label for="descP">Descrição:</label>
+                <textarea class="area" name="descP" id="abtPl"></textarea>
+            </div>
+            <div class="field">
+                <label for="pub">Privacidade</label>
+                <select name="pub" id="pubPl">
+                    <option value="">Público</option>
+                    <option value="">Privado</option>
+                </select>
+            </div>
+            <button onclick="salvaNDados()">CONFIRMAR</button>
+            <button onclick="OeCWin('creaPl')">CANCELAR</button>
+            <button onclick="apagaPlay()">APAGAR PLAYLIST</button>
+            <span>AVISO: Caso a privacidade seja configurada para "público", qualquer um com aecsso
+                à sua conta também terá acesso a esta playlist.
+            </span>
+        </div>
     </div>   
 </body>
 </html>

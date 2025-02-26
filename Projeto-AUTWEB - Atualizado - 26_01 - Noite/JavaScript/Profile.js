@@ -70,7 +70,7 @@ function editaLogin(idNom, idEm, idSen, idAp) {
 
 function criarListaPlay(id, na, des) {
     let items = JSON.parse(localStorage.getItem('playItem'))
-    let newLista = {count: 1, playname: na, desc: des}
+    let newLista = {count: 1, playname: na, desc: des, id: id}
 
     let i = 1
     while (i <= items.count) {
@@ -91,17 +91,19 @@ function carregaPlayOnly() {
     let j = 1
     while (j <= playlists.count) {
         let temp = playlists['play' + j]
-        if (temp.UserID == id) {
-            let mene = document.createElement('div');
-            mene.classList.add('cartoon-box');
-            mene.id = temp.playID;
-            mene.innerHTML = '<span>'+ temp.nome + '</span>'
-            mene.style.backgroundColor = getRandomRgbColor()
-            mene.addEventListener("click", function() {
-                criarListaPlay(temp.playID, temp.nome, temp.desc);
-                window.location = 'PlaylistPage.html'
-            })
-            document.getElementById('Plays').appendChild(mene)
+        if (playlists['play' + j] != null) {
+            if (temp.UserID == id) {
+                let mene = document.createElement('div');
+                mene.classList.add('cartoon-box');
+                mene.id = temp.playID;
+                mene.innerHTML = '<span>'+ temp.nome + '</span>'
+                mene.style.backgroundColor = getRandomRgbColor()
+                mene.addEventListener("click", function() {
+                    criarListaPlay(temp.playID, temp.nome, temp.desc);
+                    window.location = 'PlaylistPage.html'
+                })
+                document.getElementById('Plays').appendChild(mene)
+            }
         }
         j++
     }

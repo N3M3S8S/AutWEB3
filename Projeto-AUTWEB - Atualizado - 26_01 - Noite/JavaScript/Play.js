@@ -142,17 +142,19 @@ function carregaPlay() {
     let playlists = JSON.parse(localStorage.getItem('playlistTable'))
     let j = 1
     while (j <= playlists.count) {
-        let temp = playlists['play' + j]
-        if (temp.UserID == id) {
-            let mene = document.createElement('div');
-            mene.classList.add('cartoon-box');
-            mene.id = temp.playID;
-            mene.innerHTML = '<span>'+ temp.nome + '</span>'
-            mene.style.backgroundColor = getRandomRgbColor()
-            mene.addEventListener("click", function() {
-                addPlayItem(temp.playID);
-            })
-            document.getElementById('lists').appendChild(mene)
+        if (playlists['play' + j] != null) {
+            let temp = playlists['play' + j]
+            if (temp.UserID == id) {
+                let mene = document.createElement('div');
+                mene.classList.add('cartoon-box');
+                mene.id = temp.playID;
+                mene.innerHTML = '<span>'+ temp.nome + '</span>'
+                mene.style.backgroundColor = getRandomRgbColor()
+                mene.addEventListener("click", function() {
+                    addPlayItem(temp.playID);
+                })
+                document.getElementById('lists').appendChild(mene)
+            }
         }
         j++
     }

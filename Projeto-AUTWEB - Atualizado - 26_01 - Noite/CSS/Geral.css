@@ -1,5 +1,10 @@
 /*Todas as configurações CSS aqui presentes devem estar ligadas a todos os arquivos html, eles contém dados essenciais*/
 
+input:focus {
+    transform: scale(1.03);
+    
+}
+
 .white-theme {
     #imgLi {
         display: block;
